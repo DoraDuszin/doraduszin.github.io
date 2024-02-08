@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'doraduszin-developer-website';
+  selectedTab = 'about';
+
+  tabChanged(tab: string): void {
+    this.selectedTab = tab;
+  }
 }

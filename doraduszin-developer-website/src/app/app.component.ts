@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {TranslocoService} from '@ngneat/transloco';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,18 @@ export class AppComponent {
   title = 'doraduszin-developer-website';
   selectedTab = 'about';
 
+  constructor(private translocoService: TranslocoService) {
+  }
+
   tabChanged(tab: string): void {
     this.selectedTab = tab;
+  }
+
+  changeLanguage(lang: string): void {
+    this.translocoService.setActiveLang(lang);
+  }
+
+  showLangButton(value: string): boolean {
+    return this.translocoService.getActiveLang() !== value;
   }
 }

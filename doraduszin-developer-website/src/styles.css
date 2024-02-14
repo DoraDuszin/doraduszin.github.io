@@ -1,10 +1,19 @@
+@import "~flag-icon-css/css/flag-icons.min.css";
+
 :root {
   --gold-color: #b88a44;
 }
 
 body {
   margin: 0;
-  font-family: 'Gadugi', sans-serif;
+  font-family: "Segoe UI";
+}
+
+.header-text {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
 }
 
 .display-flex {
@@ -16,7 +25,7 @@ body {
 }
 
 .content-container {
-  margin: 2rem 1rem 2rem 1rem;
+  margin: 0 3rem;
 }
 
 .image {
@@ -28,6 +37,14 @@ body {
   height: 0.2rem;
   background-color: var(--gold-color);
   margin: 2rem 1rem 2rem 1rem;
+}
+
+.title {
+  padding: 0 0 1.5rem 0;
+}
+
+.section {
+  padding: 0 0 1rem 0;
 }
 
 ion-toolbar {
@@ -49,12 +66,21 @@ ion-col {
   padding: 0;
 }
 
+ion-tab-button {
+  -webkit-tap-highlight-color: transparent;
+}
+
 ion-tab-button.active {
   color: var(--gold-color);
   border-bottom: 0.2rem var(--gold-color) solid;
 }
 
-@font-face {
+ion-tab-button:hover ion-label,
+ion-tab-button:active ion-label {
+  color: var(--gold-color)
+}
+
+/*@font-face {
   font-family: 'Gadugi';
   src: url('assets/fonts/gadugi-normal.ttf') format('truetype');
   font-weight: normal;
@@ -73,4 +99,4 @@ ion-tab-button.active {
   src: url('assets/fonts/gadugi-gras.ttf') format('truetype');
   font-weight: auto;
   font-style: normal;
-}
+}*/

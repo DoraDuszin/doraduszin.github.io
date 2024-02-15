@@ -15,7 +15,8 @@
   "content": {
     "about": {
       "welcome": "Welcome",
-      "description": "Több mint 7 év, különböző iparágakban és technológiákban szerzett tapasztalattal rendelkező full-stack szabadúszó szoftverfejlesztő vagyok. A részletekbe vetett kiemelkedő figyelmemmel és innovatív problémamegoldó képességeimmel könnyítem meg a klienseim hétköznapjait. Volt lehetőségem vezető svájci telekommunikációs ügyfelek számára hatékony adminisztrációs rendszerek és webáruházak tervezésén keresztül a felhőalapú tároló- és szinkronizáló szolgáltatások fejlesztéséig tapasztalatot szereznem. Java, Spring Boot, Angular és egyéb technológiák terén szerzett jártasságom folyamatosan biztosítja a zökkenőmentes felhasználói élményeket és elősegíti a nyereséges értékesítést.\n\nA technikai szakértelem mellett az effektív kommunikációra, csapatmunkára és vezetésre való elkötelezettségem kulcsfontosságú volt a multidiszciplináris csapatokkal való együttműködésben és a sikeres projektek kivitelezésében. , ahogy folytatom a határok feszegetését és az innovációt  Fedezd fel portfóliómat, hogy megtudd, hogyan tudunk együttműködni és csatlakozz hozzám a szoftverfejlesztés dinamikus világában!"
+      "section-1": "My name is Dora Duszin, I'm a full-stack freelance software developer with over 7 years of experience across diverse industries and technologies.",
+      "section-2": "I'm based in Valencia, Spain - but have had the chance to collaborate with many international teams across Europe."
     }
   }
 }

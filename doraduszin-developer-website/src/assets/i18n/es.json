@@ -15,7 +15,8 @@
   "content": {
     "about": {
       "welcome": "Welcome",
-      "description": "Con más de 7 años de experiencia en distintas industrias y tecnologías, me destaco como una desarrolladora de software freelance full-stack con gran atención al detalle y habilidades innovadoras para resolver problemas. Desde la creación de sistemas administrativos robustos y tiendas en línea para destacados clientes en telecomunicaciones hasta la optimización de servicios de almacenamiento en la nube y sincronización, mi dominio en Java, Spring Boot, Angular, y más, ha garantizado experiencias de usuario fluidas y ha impulsado ventas exitosas.\n\nAdemás de mi pericia técnica, mi enfoque en la comunicación efectiva, el trabajo en equipo y el liderazgo ha sido esencial para colaborar con equipos multidisciplinarios y liderar proyectos hacia el éxito. Únete a mí en este camino de innovación y superación de límites en el apasionante mundo del desarrollo de software. Explora mi portafolio para descubrir cómo podemos trabajar juntos y alcanzar la excelencia."
+      "section-1": "My name is Dora Duszin, I'm a full-stack freelance software developer with over 7 years of experience across diverse industries and technologies.",
+      "section-2": "I'm based in Valencia, Spain - but have had the chance to collaborate with many international teams across Europe."
     }
   }
 }

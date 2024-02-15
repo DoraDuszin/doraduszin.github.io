@@ -4,6 +4,7 @@
   --gold-color: #b88a44;
   --black-color: rgba(0,0,0,0.85);
   --white-color: rgba(255,255,255, 0.8);
+  --light-gray-color: #f5f3f1;
 }
 
 body {
@@ -29,6 +30,10 @@ body {
 
 .pb-4 {
   padding-bottom: 4rem;
+}
+
+.m-0 {
+  margin: 0;
 }
 
 .header-text {
@@ -81,6 +86,10 @@ body {
 
 .text-white {
   color: var(--white-color);
+}
+
+.text-light-gray {
+  color: var(--light-gray-color);
 }
 
 .text-huge {
@@ -180,6 +189,10 @@ ion-tab-button.active {
 ion-tab-button:hover ion-label,
 ion-tab-button:active ion-label {
   color: var(--gold-color)
+}
+
+ion-card {
+  border-radius: 0;
 }
 
 @keyframes typing {

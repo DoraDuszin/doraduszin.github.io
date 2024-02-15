@@ -16,7 +16,11 @@
     "about": {
       "welcome": "Welcome",
       "section-1": "My name is Dora Duszin, I'm a full-stack freelance software developer with over 7 years of experience across diverse industries and technologies.",
-      "section-2": "I'm based in Valencia, Spain - but have had the chance to collaborate with many international teams across Europe."
+      "section-2": "I'm based in Valencia, Spain - but have had the chance to collaborate with many international teams across Europe.",
+      "example": {
+        "cloud": "from improving cloud storage and synchronization services",
+        "webshop": "through building robust administration systems and webshops"
+      }
     }
   }
 }

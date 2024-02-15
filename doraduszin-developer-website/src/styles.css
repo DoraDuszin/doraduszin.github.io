@@ -11,12 +11,24 @@ body {
   font-family: "Segoe UI";
 }
 
+.pb-0 {
+  padding-bottom: 0;
+}
+
 .pt-2 {
   padding-top: 2rem;
 }
 
+.pt-4 {
+  padding-top: 4rem;
+}
+
 .pb-2 {
   padding-bottom: 2rem;
+}
+
+.pb-4 {
+  padding-bottom: 4rem;
 }
 
 .header-text {
@@ -32,6 +44,10 @@ body {
 
 .border-left-gold {
   border-left: 0.1rem var(--gold-color) solid;
+}
+
+.border-right-gold {
+  border-right: 0.1rem var(--gold-color) solid;
 }
 
 .display-flex {
@@ -79,6 +95,10 @@ body {
   text-align: center;
 }
 
+.text-align-end {
+  text-align: end;
+}
+
 .image {
   width: 40%;
 }
@@ -99,6 +119,18 @@ body {
 .section {
   /*padding: 0 0 1rem 0;*/
   padding: 0 0 1rem 1rem;
+}
+
+.section-left {
+  padding: 0 1rem 1rem 0;
+}
+
+.section-left-pb-0 {
+  padding: 0 1rem 0 0;
+}
+
+.section-pb-0 {
+  padding: 0 0 0 1rem;
 }
 
 ion-toolbar {

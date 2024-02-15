@@ -75,6 +75,13 @@ body {
   margin: 0 3rem;
 }
 
+.card-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0 2rem 0;
+}
+
 .welcome-container {
   padding: 2.5rem 0;
   width: 100%;
@@ -122,6 +129,10 @@ body {
 
 .image-30 {
   width: 30%;
+}
+
+.image-50 {
+  width: 50%;
 }
 
 .image-100 {
@@ -193,6 +204,14 @@ ion-tab-button:active ion-label {
 
 ion-card {
   border-radius: 0;
+}
+
+ion-card-header {
+  padding: 1rem 3rem;
+}
+
+ion-card-header+.card-content-md {
+  padding: 1rem 3rem 2rem 3rem;
 }
 
 @keyframes typing {

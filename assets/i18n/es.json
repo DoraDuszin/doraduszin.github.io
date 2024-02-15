@@ -14,12 +14,16 @@
   },
   "content": {
     "about": {
-      "welcome": "Welcome",
+      "welcome": "Hello, World",
       "section-1": "Soy Dora Duszin, una desarrolladora full-stack freelance de software con más de 7 años de experiencia en diversas industrias y tecnologías.",
       "section-2": "Tengo mi base en Valencia, España, pero he tenido la oportunidad de colaborar con varios equipos internacionales en toda Europa.",
+      "section-3": "He colaborado con clientes diferentes para ...",
+      "section-4": "... además de capacidades técnicas, he obtenido una amplia experiencia en entornos ágiles y colaborativos, ofreciendo habilidades de comunicación sólidas en varios idiomas.",
+      "section-5": "¡Acompáñame mientras continúo mi viaje de innovación y aprendizaje continuo en el dinámico mundo del desarrollo de software!",
       "example": {
-        "cloud": "desde mejorar servicios de sincronización y almacenamiento en la nube",
-        "webshop": "hasta la creación de sistemas de administración y tiendas web robustos"
+        "cloud": "mejorar servicios de sincronización y almacenamiento en la nube",
+        "webshop": "crear sistemas de administración y tiendas web robustos",
+        "database": "desarrollar microservicios y perfeccionar la construcción de bases de datos"
       }
     }
   }

@@ -80,7 +80,7 @@ body {
 }
 
 .text-huge {
-  font-size: 50px;
+  font-size: 30px;
 }
 
 .text-big {
@@ -101,6 +101,10 @@ body {
 
 .image {
   width: 40%;
+}
+
+.image-30 {
+  width: 30%;
 }
 
 .separator {

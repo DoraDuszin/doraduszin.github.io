@@ -14,12 +14,16 @@
   },
   "content": {
     "about": {
-      "welcome": "Welcome",
+      "welcome": "Hello, World",
       "section-1": "Duszin Dóra vagyok, full-stack szabadúszó szoftverfejlesztő több mint 7 év szakmai tapasztalattal különböző iparágak és technológiák terén.",
-      "section-2": "A bázisom a spanyolországi Valenciában található, de lehetőségem volt számos nemzetközi csapattal együttműködni Európa-szerte.",
+      "section-2": "A bázisom a spanyolországi Valenciában található, de lehetőségem volt több nemzetközi csapattal együttműködni Európa-szerte.",
+      "section-3": "Szerencsém volt számos különböző ügyféllel együttműködni a ...",
+      "section-4": "... ezáltal a szakmai jártasságon túl jelentős tapasztalatot szereztem különböző, közös munkára épülő dinamikus, agilis környezetben, ahol több nyelven is erős kommunikációs készségemet tudtam kamatoztatni.",
+      "section-5": "Csatlakozz hozzám az egész életen át tartó tanulás és innováció útján a szoftverfejlesztés dinamikus világában!",
       "example": {
         "cloud": "felhőalapú tárolási és szinkronizálási szolgáltatások fejlesztésétől kezdve",
-        "webshop": "robusztus adminisztrációs rendszerek és webáruházak kiépítésén keresztül"
+        "webshop": "robusztus adminisztrációs rendszerek és webáruházak kiépítésén keresztül",
+        "database": "egészen a mikroszolgáltatás-fejlesztés és adatbázis-építésig"
       }
     }
   }

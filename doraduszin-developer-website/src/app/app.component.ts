@@ -9,17 +9,28 @@ import {TranslocoService} from '@ngneat/transloco';
 export class AppComponent implements OnInit {
   title = 'doraduszin-developer-website';
   selectedTab = 'about';
+  selfIntroText = '';
 
   constructor(private translocoService: TranslocoService) {
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
     setTimeout(() => {
       const typingAnimation = document.getElementById('typing-animation');
       if (typingAnimation) {
         typingAnimation.classList.add('typing');
       }
     }, 2000);
+    this.translocoService.selectTranslateObject('content.intro.title').subscribe(translation => {
+      this.selfIntroText = translation;
+      const style = document.createElement('style');
+      style.innerHTML = `
+      .typing-animation {
+        --steps: ${this.getSelfIntroSteps()};
+      }
+    `;
+      document.head.appendChild(style);
+    });
   }
 
   tabChanged(tab: string): void {
@@ -32,5 +43,10 @@ export class AppComponent implements OnInit {
 
   showLangButton(value: string): boolean {
     return this.translocoService.getActiveLang() !== value;
+  }
+
+  getSelfIntroSteps(): number {
+    console.log('selfintro: ', this.selfIntroText.length);
+    return this.selfIntroText.length + 1;
   }
 }

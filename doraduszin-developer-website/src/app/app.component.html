@@ -47,7 +47,7 @@
     <ion-col class="display-flex">
       <div class="content-container welcome-container">
         <div class="title">
-          <ion-label class="code-text text-huge">{{ t('content.about.welcome') }}<span id="typing-animation"></span></ion-label>
+          <ion-label class="code-text text-huge">{{ t('content.about.welcome') }}<span id="typing-dots"></span></ion-label>
         </div>
       </div>
     </ion-col>
@@ -88,7 +88,7 @@
   <ion-row>
     <ion-col>
       <div class="content-container display-flex justify-content-center">
-        <img class="image" src="assets/icons/cloud_sync_black.png">
+        <img class="image floating" src="assets/icons/cloud_sync_black.png">
       </div>
     </ion-col>
   </ion-row>
@@ -104,7 +104,7 @@
   <ion-row>
     <ion-col class="pt-4">
       <div class="content-container display-flex justify-content-center">
-        <img class="image" src="assets/icons/webshop_black.svg">
+        <img class="image pushing" src="assets/icons/webshop_black.svg">
       </div>
     </ion-col>
   </ion-row>
@@ -120,7 +120,7 @@
   <ion-row>
     <ion-col class="pt-4">
       <div class="content-container display-flex justify-content-center">
-        <img class="image-30" src="assets/icons/database_black.svg">
+        <img class="image-30 upDown" src="assets/icons/database_black.svg">
       </div>
     </ion-col>
   </ion-row>
@@ -204,23 +204,55 @@
   </ion-row>
   <ion-row>
     <div class="background-black">
-      <div>
-        <ion-card class="m-0">
-          <div class="card-image-container">
-            <img src="assets/images/project.png" class="image-50"/>
-          </div>
-          <ion-card-header class="border-top-gold background-black pt-2">
-            <ion-card-title class="text-white">{{ t('content.projects.project-3.title') }}</ion-card-title>
-            <ion-card-subtitle class="text-light-gray">{{ t('content.projects.devpoint') }} / {{ t('content.projects.contractor') }}</ion-card-subtitle>
-            <ion-card-subtitle class="text-italic text-light-gray">{{ t('content.projects.project-3.date') }}</ion-card-subtitle>
-          </ion-card-header>
-          <ion-card-content class="background-black text-white">
-            {{ t('content.projects.project-3.description') }}
-          </ion-card-content>
-        </ion-card>
-      </div>
+      <ion-card class="m-0">
+        <div class="card-image-container">
+          <img src="assets/images/project.png" class="image-50"/>
+        </div>
+        <ion-card-header class="border-top-gold background-black pt-2">
+          <ion-card-title class="text-white">{{ t('content.projects.project-3.title') }}</ion-card-title>
+          <ion-card-subtitle class="text-light-gray">{{ t('content.projects.devpoint') }} / {{ t('content.projects.contractor') }}</ion-card-subtitle>
+          <ion-card-subtitle class="text-italic text-light-gray">{{ t('content.projects.project-3.date') }}</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content class="background-black text-white">
+          {{ t('content.projects.project-3.description') }}
+        </ion-card-content>
+      </ion-card>
     </div>
   </ion-row>
+  <ion-row>
+    <ion-col class="display-flex">
+      <div class="content-container welcome-container">
+        <div class="title">
+          <ion-label class="code-text text-big typing-animation" [textContent]="selfIntroText"></ion-label>
+        </div>
+      </div>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col class="display-flex">
+      <div class="content-container welcome-container">
+        <div class="display-flex justify-content-center">
+          <img src="assets/images/cat2.jpg" class="image-100 border-radius-50"/>
+        </div>
+      </div>
+    </ion-col>
+  </ion-row>
+  <ion-row class="pb-4">
+    <ion-col class="display-flex">
+      <div class="content-container border-left-gold">
+        <div class="section-pb-0">
+          <ion-label class="text-normal">
+            {{ t('content.contact.section-1') }}
+          </ion-label>
+        </div>
+      </div>
+    </ion-col>
+  </ion-row>
+  <ion-footer>
+    <ion-toolbar>
+      <ion-title>Footer \later. </ion-title>
+    </ion-toolbar>
+  </ion-footer>
 
   <!--<ion-row>
     <ion-col class="display-flex background-black">

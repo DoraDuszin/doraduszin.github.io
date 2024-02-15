@@ -139,6 +139,10 @@ body {
   width: 100%;
 }
 
+.border-radius-50 {
+  border-radius: 50%;
+}
+
 .separator {
   width: 100%;
   height: 0.2rem;
@@ -204,6 +208,7 @@ ion-tab-button:active ion-label {
 
 ion-card {
   border-radius: 0;
+  box-shadow: none;
 }
 
 ion-card-header {
@@ -214,16 +219,109 @@ ion-card-header+.card-content-md {
   padding: 1rem 3rem 2rem 3rem;
 }
 
-@keyframes typing {
+@keyframes typingDots {
   0% { content: '.'; }
   50% { content: '..'; }
   75% { content: '...'; }
   100% { content: ''; }
 }
 
-#typing-animation::after {
+#typing-dots::after {
   content: '';
-  animation: typing 2.5s steps(4) infinite;
+  animation: typingDots 2.5s steps(4) infinite;
+}
+
+@keyframes floatAnimation {
+  0% {
+    transform: translate(0%, 0);
+  }
+  50% {
+    transform: translate(5%, 5%);
+  }
+  75% {
+    transform: translate(-2.5%, -2.5%);
+  }
+  100% {
+    transform: translate(0%, 0);
+  }
+}
+
+.floating {
+  animation: floatAnimation 12s ease-in-out infinite;
+}
+
+@keyframes pushAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-5%);
+  }
+  75% {
+    transform: translateX(5%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.pushing {
+  animation: pushAnimation 12s ease-in-out infinite;
+}
+
+@keyframes upDownAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5%);
+  }
+  75% {
+    transform: translateY(-5%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.upDown {
+  animation: upDownAnimation 12s ease-in-out infinite;
+}
+
+.typing-animation {
+  --steps: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0.1rem var(--gold-color) solid;
+  animation: typing 5s steps(var(--steps), end) infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: calc(var(--steps) / 30 * 100%);
+  }
+}
+
+.typing-animation::before {
+  content: '';
+  display: inline-block;
+  vertical-align: bottom;
+  width: 0;
+  height: 1em;
+  background-color: transparent;
+  animation: cursor 0.5s infinite alternate;
+}
+
+@keyframes cursor {
+  from {
+    background-color: orange;
+  }
+  to {
+    background-color: transparent;
+  }
 }
 
 /*@font-face {

@@ -8,7 +8,7 @@
   },
   "header": {
     "about": "Rólam",
-    "portfolio": "Portfólió",
+    "projects": "Projektek",
     "services": "Szolgáltatások",
     "contact": "Elérhetőség"
   },
@@ -24,6 +24,25 @@
         "cloud": "felhőalapú tárolási és szinkronizálási szolgáltatások fejlesztésétől kezdve",
         "webshop": "robusztus adminisztrációs rendszerek és webáruházak kiépítésén keresztül",
         "database": "egészen a mikroszolgáltatás-fejlesztés és adatbázis-építésig"
+      }
+    },
+    "projects": {
+      "devpoint": "devpoint GmbH",
+      "contractor": "contractor",
+      "project-1": {
+        "title": "Administration System and Webshop",
+        "date": "01/2023 - Present",
+        "description": "Full-stack web development of an innovative administration system and webshop for a leading Swiss cable & satellite client providing IT- and cloud services, network, datacenter and internet."
+      },
+      "project-2": {
+        "title": "Cloud Storage and Synchronization Service",
+        "date": "07/2022 - 12/2022",
+        "description": "Microservice development and migration of a cloud storage service for a prominent Swiss telecommunications and ICT service provider serving residential and business customers in Switzerland and Italy."
+      },
+      "project-3": {
+        "title": "CAD Support and Administration System",
+        "date": "01/2020 - 06/2022",
+        "description": "Full-stack web development and enhancement of an administration platform for a proprietary CAD program developed by an international client based in Germany provisioning lightning and surge protection solutions."
       }
     }
   }

@@ -8,7 +8,7 @@
   },
   "header": {
     "about": "About",
-    "portfolio": "Portfolio",
+    "projects": "Projects",
     "services": "Services",
     "contact": "Contact"
   },
@@ -24,6 +24,25 @@
         "cloud": "from improving cloud storage and synchronization services",
         "webshop": "through building robust administration systems and webshops",
         "database": "to executing microservice development and database construction"
+      }
+    },
+    "projects": {
+      "devpoint": "devpoint GmbH",
+      "contractor": "contractor",
+      "project-1": {
+        "title": "Administration System and Webshop",
+        "date": "01/2023 - Present",
+        "description": "Full-stack web development of an innovative administration system and webshop for a leading Swiss cable & satellite client providing IT- and cloud services, network, datacenter and internet."
+      },
+      "project-2": {
+        "title": "Cloud Storage and Synchronization Service",
+        "date": "07/2022 - 12/2022",
+        "description": "Microservice development and migration of a cloud storage service for a prominent Swiss telecommunications and ICT service provider serving residential and business customers in Switzerland and Italy."
+      },
+      "project-3": {
+        "title": "CAD Support and Administration System",
+        "date": "01/2020 - 06/2022",
+        "description": "Full-stack web development and enhancement of an administration platform for a proprietary CAD program developed by an international client based in Germany provisioning lightning and surge protection solutions."
       }
     }
   }

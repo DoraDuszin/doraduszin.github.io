@@ -50,6 +50,10 @@ body {
   border-right: 0.1rem var(--gold-color) solid;
 }
 
+.border-top-gold {
+  border-top: 0.1rem var(--gold-color) solid;
+}
+
 .display-flex {
   display: flex;
 }
@@ -91,6 +95,10 @@ body {
   font-size: 12px;
 }
 
+.text-italic {
+  font-style: italic;
+}
+
 .text-align-center {
   text-align: center;
 }
@@ -105,6 +113,10 @@ body {
 
 .image-30 {
   width: 30%;
+}
+
+.image-100 {
+  width: 100%;
 }
 
 .separator {

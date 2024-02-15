@@ -31,9 +31,9 @@
                           (click)="tabChanged('portfolio')">
             <ion-label class="header-text">{{ t('header.portfolio') }}</ion-label>
           </ion-tab-button>-->
-          <ion-tab-button tab="services" [class.active]="selectedTab === 'services'"
-                          (click)="tabChanged('services')">
-            <ion-label class="header-text">{{ t('header.services') }}</ion-label>
+          <ion-tab-button tab="services" [class.active]="selectedTab === 'projects'"
+                          (click)="tabChanged('projects')">
+            <ion-label class="header-text">{{ t('header.projects') }}</ion-label>
           </ion-tab-button>
           <ion-tab-button tab="contact" [class.active]="selectedTab === 'contact'"
                           (click)="tabChanged('contact')">
@@ -155,6 +155,67 @@
       </div>
     </ion-col>
   </ion-row>
+  <ion-row>
+    <ion-col class="display-flex background-black">
+      <div class="content-container welcome-container">
+        <div class="title">
+          <ion-label class="code-text text-white text-huge">{{ t('header.projects') }}</ion-label>
+        </div>
+      </div>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <div class="background-black">
+      <div class="content-container">
+        <ion-card>
+          <img src="assets/images/project.png" class="image-100"/>
+          <ion-card-header class="border-top-gold">
+            <ion-card-title>{{ t('content.projects.project-1.title') }}</ion-card-title>
+            <ion-card-subtitle>{{ t('content.projects.devpoint') }} / {{ t('content.projects.contractor') }}</ion-card-subtitle>
+            <ion-card-subtitle class="text-italic">{{ t('content.projects.project-1.date') }}</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            {{ t('content.projects.project-1.description') }}
+          </ion-card-content>
+        </ion-card>
+      </div>
+    </div>
+  </ion-row>
+  <ion-row>
+    <div class="background-black">
+      <div class="content-container">
+        <ion-card>
+          <img src="assets/images/project.png" class="image-100"/>
+          <ion-card-header class="border-top-gold">
+            <ion-card-title>{{ t('content.projects.project-2.title') }}</ion-card-title>
+            <ion-card-subtitle>{{ t('content.projects.devpoint') }} / {{ t('content.projects.contractor') }}</ion-card-subtitle>
+            <ion-card-subtitle class="text-italic">{{ t('content.projects.project-2.date') }}</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            {{ t('content.projects.project-2.description') }}
+          </ion-card-content>
+        </ion-card>
+      </div>
+    </div>
+  </ion-row>
+  <ion-row>
+    <div class="background-black">
+      <div class="content-container">
+        <ion-card>
+          <img src="assets/images/project.png" class="image-100"/>
+          <ion-card-header class="border-top-gold">
+            <ion-card-title>{{ t('content.projects.project-3.title') }}</ion-card-title>
+            <ion-card-subtitle>{{ t('content.projects.devpoint') }} / {{ t('content.projects.contractor') }}</ion-card-subtitle>
+            <ion-card-subtitle class="text-italic">{{ t('content.projects.project-3.date') }}</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            {{ t('content.projects.project-3.description') }}
+          </ion-card-content>
+        </ion-card>
+      </div>
+    </div>
+  </ion-row>
+
   <!--<ion-row>
     <ion-col class="display-flex background-black">
       <div class="content-container">

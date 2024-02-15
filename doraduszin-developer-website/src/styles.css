@@ -2,6 +2,8 @@
 
 :root {
   --gold-color: #b88a44;
+  --black-color: rgba(0,0,0,0.85);
+  --white-color: rgba(255,255,255, 0.8);
 }
 
 body {
@@ -10,10 +12,14 @@ body {
 }
 
 .header-text {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
   font-style: normal;
   text-transform: uppercase;
+}
+
+.code-text {
+  font-family: "Courier New";
 }
 
 .display-flex {
@@ -28,6 +34,23 @@ body {
   margin: 0 3rem;
 }
 
+.welcome-container {
+  padding: 2.5rem 0;
+  width: 100%;
+}
+
+.background-black {
+  background-color: var(--black-color);
+}
+
+.text-white {
+  color: var(--white-color);
+}
+
+.text-huge {
+  font-size: 50px;
+}
+
 .image {
   width: 100%;
 }
@@ -40,7 +63,9 @@ body {
 }
 
 .title {
-  padding: 0 0 1.5rem 0;
+  /*padding: 0 0 1.5rem 0;*/
+  display: flex;
+  align-items: center;
 }
 
 .section {
@@ -48,7 +73,7 @@ body {
 }
 
 ion-toolbar {
-  --background: #000000;
+  --background: var(--black-color);
   --color: white;
   --padding-top: 1rem;
   --padding-bottom: 1rem;
@@ -78,6 +103,18 @@ ion-tab-button.active {
 ion-tab-button:hover ion-label,
 ion-tab-button:active ion-label {
   color: var(--gold-color)
+}
+
+@keyframes typing {
+  0% { content: '.'; }
+  50% { content: '..'; }
+  75% { content: '...'; }
+  100% { content: ''; }
+}
+
+#typing-animation::after {
+  content: '';
+  animation: typing 2.5s steps(4) infinite;
 }
 
 /*@font-face {

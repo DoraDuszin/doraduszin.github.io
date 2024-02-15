@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {TranslocoService} from '@ngneat/transloco';
 
 @Component({
@@ -6,11 +6,20 @@ import {TranslocoService} from '@ngneat/transloco';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'doraduszin-developer-website';
   selectedTab = 'about';
 
   constructor(private translocoService: TranslocoService) {
+  }
+
+  ngOnInit() {
+    setTimeout(() => {
+      const typingAnimation = document.getElementById('typing-animation');
+      if (typingAnimation) {
+        typingAnimation.classList.add('typing');
+      }
+    }, 2000);
   }
 
   tabChanged(tab: string): void {

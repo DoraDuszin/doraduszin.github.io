@@ -27,10 +27,10 @@
                           (click)="tabChanged('about')">
             <ion-label class="header-text">{{ t('header.about') }}</ion-label>
           </ion-tab-button>
-          <ion-tab-button tab="portfolio" [class.active]="selectedTab === 'portfolio'"
+          <!--<ion-tab-button tab="portfolio" [class.active]="selectedTab === 'portfolio'"
                           (click)="tabChanged('portfolio')">
             <ion-label class="header-text">{{ t('header.portfolio') }}</ion-label>
-          </ion-tab-button>
+          </ion-tab-button>-->
           <ion-tab-button tab="services" [class.active]="selectedTab === 'services'"
                           (click)="tabChanged('services')">
             <ion-label class="header-text">{{ t('header.services') }}</ion-label>
@@ -44,11 +44,20 @@
     </ion-col>
   </ion-row>
   <ion-row>
+    <ion-col class="display-flex background-black">
+      <div class="content-container welcome-container">
+        <div class="title">
+          <ion-label class="code-text text-white text-huge">{{ t('content.about.welcome') }}<span id="typing-animation"></span></ion-label>
+        </div>
+      </div>
+    </ion-col>
+  </ion-row>
+  <!--<ion-row>
     <ion-col>
       <img class="image" src="assets/images/cat2.jpg">
     </ion-col>
-  </ion-row>
-  <ion-row>
+  </ion-row>-->
+  <!--<ion-row>
     <div class="separator"></div>
   </ion-row>
   <ion-row>
@@ -115,7 +124,7 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       </ion-card-content>
     </ion-card>
-  </div>
+  </div>-->
 
   <!--<ion-row>
     <ion-col class="display-flex justify-content-center">

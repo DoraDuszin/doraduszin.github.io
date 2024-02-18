@@ -16,6 +16,10 @@ body {
   padding: 1rem;
 }
 
+.pl-1 {
+  padding-left: 1rem;
+}
+
 .pr-1 {
   padding-right: 1rem;
 }
@@ -135,6 +139,11 @@ body {
   width: 100%;
 }
 
+.section-title {
+  padding-bottom: 1rem;
+  padding-top: 2rem;
+}
+
 .background-black {
   background-color: var(--black-color);
 }
@@ -152,7 +161,7 @@ body {
 }
 
 .text-title {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .text-big {
@@ -338,6 +347,10 @@ ion-card-title {
   width: 50%;
 }
 
+.width-60 {
+  width: 60%;
+}
+
 .width-10 {
   width: 10%;
 }
@@ -370,6 +383,14 @@ ion-buttons {
   margin: 0;
 }
 
+ion-button.language-button {
+  --background: transparent !important;
+  --background-activated: transparent !important;
+  --background-focused: transparent !important;
+  --background-hover: transparent !important;
+  --background-pressed: transparent !important;
+}
+
 .show-languages {
   border: 0.1rem solid var(--gold-color);
   border-radius: 2rem;
@@ -392,6 +413,27 @@ ion-buttons {
   -webkit-box-shadow: 5px 5px 5px 0px rgba(221,221,221,0.49);
   -moz-box-shadow: 5px 5px 5px 0px rgba(221,221,221,0.49);
   box-shadow: 5px 5px 5px 0px rgba(221,221,221,0.49);
+}
+
+.skill-container {
+  border: 0.1rem solid var(--black-color);
+  width: 100%;
+}
+
+.color-gold {
+  color: var(--gold-color);
+}
+
+.black-image-wrapper {
+  background-color: var(--black-color);
+  width: 40%;
+  border-radius: 50%;
+}
+
+.full-center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*ion-button.button-native {

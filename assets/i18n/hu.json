@@ -1,5 +1,7 @@
 {
   "general": {
+    "frontend": "frontend",
+    "backend": "backend",
     "symbols": {
       "copyright": "©"
     },
@@ -38,7 +40,11 @@
       }
     },
     "experience-services": {
-      "section-1": "Over the years I consistently delivered high-quality and reliable software for leading clients using the latest technologies."
+      "section-1": "Over the years I consistently delivered high-quality and reliable software for leading clients using the latest technologies.",
+      "section-2": "My expertise spans a wide range of programming languages and tools covering both front and backend development.",
+      "skills": {
+        "frontend": "TypeScript, JavaScript, Angular, React, Ionic, Node.js, PrimeNG, Angular Material, Bootstrap, DevExpress, HTML, CSS"
+      }
     },
     "projects": {
       "devpoint": "devpoint GmbH",

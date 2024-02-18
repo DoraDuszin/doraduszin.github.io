@@ -9,7 +9,7 @@
 
 body {
   margin: 0;
-  font-family: "Segoe UI";
+  font-family: "Montserrat";
 }
 
 .p-1 {
@@ -42,6 +42,22 @@ body {
 
 .pb-4 {
   padding-bottom: 4rem;
+}
+
+.pl-1-5 {
+  padding-left: 1.5rem;
+}
+
+.pr-1-5 {
+  padding-right: 1.5rem;
+}
+
+.pr-0-5 {
+  padding-right: 0.5rem;
+}
+
+.flag-margin {
+  margin: 0 0.5rem 0 0 !important;
 }
 
 .m-0 {
@@ -301,6 +317,65 @@ ion-card-title {
 .gold-image-blur {
 background: radial-gradient(circle, rgba(240,230,216,1) 0%, rgba(255,255,255,1) 69%, rgba(255,255,255,1) 100%);
 }
+
+.width-50 {
+  width: 50%;
+}
+
+.width-10 {
+  width: 10%;
+}
+
+ion-button.width-10 {
+  --background: none;
+  --padding-start: 0;
+  --padding-end: 0;
+  --box-shadow: none;
+  margin: 0 0 0 0.5rem;
+  -webkit-tap-highlight-color: transparent;
+}
+
+ion-button.width-10 button {
+  padding: 0;
+}
+
+ion-buttons {
+  justify-content: flex-end;
+  width: 30%;
+  margin: 0;
+  border: 0.1rem solid transparent;
+  border-radius: 2rem;
+}
+
+.language-button {
+  width: 20%;
+  margin: 0;
+}
+
+.show-languages {
+  border: 0.1rem solid var(--gold-color);
+  border-radius: 2rem;
+
+  /*border-width: 2px;
+  border-style: solid;
+  border-color: transparent;
+  background: linear-gradient(184deg, rgba(251,248,244,1) 0%, rgba(184,138,68,1) 100%),
+  linear-gradient(184deg, rgba(251,248,244,1) 0%, rgba(184,138,68,1) 100%),
+  linear-gradient(184deg, rgba(251,248,244,1) 0%, rgba(184,138,68,1) 100%),
+  linear-gradient(184deg, rgba(251,248,244,1) 0%, rgba(184,138,68,1) 100%);
+  background-origin: border-box;
+  background-clip: content-box, padding-box, border-box, border-box;*/
+}
+
+/*ion-button.button-native {
+  padding: 0;
+  background: white;
+}
+
+.button-solid.in-toolbar:not(.ion-color):not(.in-toolbar-color) .button-native {
+  padding: 0;
+  background: white;
+}*/
 
 /*ion-card-header {
   padding: 2rem 3rem;

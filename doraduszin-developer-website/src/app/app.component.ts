@@ -10,6 +10,7 @@ export class AppComponent implements OnInit {
   title = 'doraduszin-developer-website';
   selectedTab = 'about';
   selfIntroText = '';
+  showLanguages = false;
 
   constructor(private translocoService: TranslocoService) {
   }
@@ -21,28 +22,27 @@ export class AppComponent implements OnInit {
         typingAnimation.classList.add('typing');
       }
     }, 2000);
-    /*this.translocoService.selectTranslateObject('content.intro.title').subscribe(translation => {
-      this.selfIntroText = translation;
-      const style = document.createElement('style');
-      style.innerHTML = `
-      .typing-animation {
-        --steps: ${this.getSelfIntroSteps()};
-      }
-    `;
-      document.head.appendChild(style);
-    });*/
   }
 
   tabChanged(tab: string): void {
     this.selectedTab = tab;
   }
 
+  toggleLanguages(): void {
+    this.showLanguages = !this.showLanguages;
+  }
+
   changeLanguage(lang: string): void {
+    this.showLanguages = false;
     this.translocoService.setActiveLang(lang);
   }
 
+  /*changeLanguage(lang: string): void {
+    this.translocoService.setActiveLang(lang);
+  }*/
+
   showLangButton(value: string): boolean {
-    return this.translocoService.getActiveLang() !== value;
+    return this.showLanguages && this.translocoService.getActiveLang() !== value;
   }
 
   /*getSelfIntroSteps(): number {

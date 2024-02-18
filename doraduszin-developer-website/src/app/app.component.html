@@ -2,19 +2,34 @@
   <ion-row>
     <ion-col>
       <ion-header>
-        <ion-toolbar>
-          <ion-title>{{ t('general.personal.details.name') }}</ion-title>
-          <ion-buttons slot="end">
-            <ion-button *ngIf="showLangButton('en')" (click)="changeLanguage('en')">
-              <span class="flag-icon flag-icon-gb"></span>
+        <ion-toolbar class="pr-1-5">
+          <ion-title class="pl-1-5">{{ t('general.personal.details.name') }}</ion-title>
+          <ion-buttons slot="end" [ngClass]="{'show-languages': showLanguages}">
+            <ion-button *ngIf="showLangButton('en')" class="width-10 language-button" (click)="changeLanguage('en')">
+              {{ t('general.languages.en') }}
             </ion-button>
-            <ion-button *ngIf="showLangButton('es')" (click)="changeLanguage('es')">
-              <span class="flag-icon flag-icon-es"></span>
+            <ion-button *ngIf="showLangButton('es')" class="width-10 language-button" (click)="changeLanguage('es')">
+              {{ t('general.languages.es') }}
             </ion-button>
-            <ion-button *ngIf="showLangButton('hu')" (click)="changeLanguage('hu')">
-              <span class="flag-icon flag-icon-hu"></span>
+            <ion-button *ngIf="showLangButton('hu')" class="width-10 language-button" (click)="changeLanguage('hu')">
+              {{ t('general.languages.hu') }}
+            </ion-button>
+            <ion-button class="width-10 language-button pr-0-5" (click)="toggleLanguages()">
+              <img class="image-100" src="assets/icons/ionic/globe-outline-white.svg">
             </ion-button>
           </ion-buttons>
+
+          <!--<ion-buttons slot="end" class="pr-1-5" style="width: 17%">
+            <ion-button class="flag-icon flag-icon-gb width-50 flag-margin" *ngIf="showLangButton('en')" (click)="changeLanguage('en')">
+              &lt;!&ndash;<span class="flag-icon flag-icon-gb"></span>&ndash;&gt;
+            </ion-button>
+            <ion-button  class="flag-icon flag-icon-es width-50 flag-margin" *ngIf="showLangButton('es')" (click)="changeLanguage('es')">
+              &lt;!&ndash;<span class="flag-icon flag-icon-es"></span>&ndash;&gt;
+            </ion-button>
+            <ion-button class="flag-icon flag-icon-hu width-50 flag-margin" *ngIf="showLangButton('hu')" (click)="changeLanguage('hu')">
+              &lt;!&ndash;<span class="flag-icon flag-icon-hu"></span>&ndash;&gt;
+            </ion-button>
+          </ion-buttons>-->
         </ion-toolbar>
       </ion-header>
     </ion-col>

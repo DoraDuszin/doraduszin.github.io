@@ -101,7 +101,7 @@
       </div>
     </ion-col>
   </ion-row>
-  <ion-row>
+  <ion-row class="pb-2">
     <ion-col class="display-flex">
       <div class="content-container">
         <ion-label class="text-normal">
@@ -110,7 +110,35 @@
       </div>
     </ion-col>
   </ion-row>
-  <div class="pt-2">
+
+
+
+
+
+
+
+
+
+
+  <ion-row>
+    <ion-card class="outer-card">
+      <div>
+        <div class="card-container pb-0">
+          <ion-card class="inner-card">
+            <div class="card-image-container-pb-0">
+              <img src="assets/icons/cloud_curvy_black.svg" class="image-20"/>
+            </div>
+            <div>
+              <ion-card-content class="display-flex justify-content-center text-align-center">
+                {{ t('content.about.example.cloud') }}
+              </ion-card-content>
+            </div>
+          </ion-card>
+        </div>
+      </div>
+    </ion-card>
+  </ion-row>
+  <!--<div class="pt-2">
     <div class="content-container display-flex justify-content-center example-container pt-1 pb-1">
       <ion-row>
         <ion-col class="display-flex">
@@ -131,7 +159,7 @@
         </ion-col>
       </ion-row>
     </div>
-  </div>
+  </div>-->
   <div class="pt-2">
     <div class="content-container display-flex justify-content-center example-container pt-1 pb-1">
       <ion-row>
@@ -319,7 +347,7 @@
     </ion-col>
   </ion-row>
   <ion-row>
-    <ion-card class="outer-card">
+    <ion-card class="outer-card" (click)="openProjectDetails()">
       <div class="background-black">
         <div class="card-container">
           <ion-card class="inner-card">

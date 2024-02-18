@@ -1,5 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {TranslocoService} from '@ngneat/transloco';
+import {ProjectDetailComponent} from './components/project-detail-component/project-detail-component.component';
+import {ModalController} from '@ionic/angular';
 
 @Component({
   selector: 'app-root',
@@ -12,7 +14,8 @@ export class AppComponent implements OnInit {
   selfIntroText = '';
   showLanguages = false;
 
-  constructor(private translocoService: TranslocoService) {
+  constructor(private translocoService: TranslocoService,
+              private modalController: ModalController) {
   }
 
   ngOnInit(): void {
@@ -37,16 +40,15 @@ export class AppComponent implements OnInit {
     this.translocoService.setActiveLang(lang);
   }
 
-  /*changeLanguage(lang: string): void {
-    this.translocoService.setActiveLang(lang);
-  }*/
-
   showLangButton(value: string): boolean {
     return this.showLanguages && this.translocoService.getActiveLang() !== value;
   }
 
-  /*getSelfIntroSteps(): number {
-    console.log('selfintro: ', this.selfIntroText.length);
-    return this.selfIntroText.length;
-  }*/
+  async openProjectDetails(): Promise<void> {
+    const modal = await this.modalController.create({
+      component: ProjectDetailComponent,
+      cssClass: 'my-custom-modal-css'
+    });
+    return await modal.present();
+  }
 }

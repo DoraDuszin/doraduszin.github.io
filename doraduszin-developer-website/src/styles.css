@@ -5,6 +5,7 @@
   --black-color: rgba(0,0,0,0.85);
   --white-color: #ffffff;
   --light-gray-color: #f5f3f1;
+  --light-gold-color: #f6f0e7;
 }
 
 body {
@@ -132,6 +133,14 @@ body {
   justify-content: center;
   align-items: center;
   padding: 1rem 0 1rem 0;
+}
+
+.card-image-container-pb-0 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0;
+  padding-top: 1rem;
 }
 
 .welcome-container {
@@ -341,9 +350,32 @@ ion-card-content {
   background: linear-gradient(184deg, rgba(255,255,255,1) 0%, rgba(221,199,166,1) 100%);
 }
 
+/*.outer-card-inv {
+  position: relative;
+  z-index: 1;
+  border-radius: 0;
+  box-shadow: none;
+  contain: none;
+}
+
+.outer-card-inv::after {
+  content: "";
+  position: absolute;
+  inset: 0.5rem 2.5rem 1.5rem 3.5rem;
+  border: 0.1rem linear-gradient(184deg, rgba(251,248,244,1) 0%, rgba(0,0,0,1) 100%) var(--black-color);
+  border-radius: 2rem;
+  z-index: 0;
+  background: linear-gradient(184deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%);
+}*/
+
 .inner-card {
   z-index: 1;
 }
+
+/*.inner-card-inv {
+  z-index: 1;
+  background: #f6f0e7;
+}*/
 
 .outer-circle {
   position: relative;
@@ -443,7 +475,8 @@ ion-button.language-button {
 }
 
 .example-container {
-  background: #dddddd;
+  /*background: #dddddd;*/
+  background: var(--light-gold-color);
   flex-direction: column;
   border-radius: 2rem;
   -webkit-box-shadow: 5px 5px 5px 0px rgba(221,221,221,0.49);

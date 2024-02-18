@@ -3,7 +3,7 @@
 :root {
   --gold-color: #b88a44;
   --black-color: rgba(0,0,0,0.85);
-  --white-color: rgba(255,255,255, 0.8);
+  --white-color: #ffffff;
   --light-gray-color: #f5f3f1;
 }
 
@@ -131,7 +131,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem 0 2rem 0;
+  padding: 1rem 0 1rem 0;
 }
 
 .welcome-container {
@@ -289,6 +289,7 @@ ion-tab-button:active ion-label {
 
 ion-card {
   margin: 0;
+  border-radius: 2rem;
 }
 
 .card-container {
@@ -300,7 +301,26 @@ ion-card {
 }
 
 ion-card-title {
-  font-size: 1rem;
+  font-size: 0.9rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+ion-card-subtitle {
+  font-size: 0.8rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.card-content-md {
+  font-size: 0.8rem;
+  padding-inline-start: 2rem;
+  padding-inline-end: 2rem;
+  padding-bottom: 1rem;
+}
+
+ion-card-content {
+  color: var(--black-color);
 }
 
 .outer-card {
@@ -316,9 +336,9 @@ ion-card-title {
   position: absolute;
   inset: 0.5rem 2.5rem 1.5rem 3.5rem;
   border: 0.1rem linear-gradient(184deg, rgba(251,248,244,1) 0%, rgba(184,138,68,1) 100%) var(--gold-color);
-  border-radius: 4px;
+  border-radius: 2rem;
   z-index: 0;
-  background: linear-gradient(184deg, rgba(251,248,244,1) 0%, rgba(184,138,68,1) 100%);
+  background: linear-gradient(184deg, rgba(255,255,255,1) 0%, rgba(221,199,166,1) 100%);
 }
 
 .inner-card {
@@ -434,6 +454,8 @@ ion-button.language-button {
 .skill-container {
   border: 0.1rem solid var(--black-color);
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .color-gold {

@@ -24,6 +24,10 @@ body {
   padding-bottom: 0;
 }
 
+.pt-1 {
+  padding-top: 1rem;
+}
+
 .pt-2 {
   padding-top: 2rem;
 }
@@ -34,6 +38,10 @@ body {
 
 .pt-4 {
   padding-top: 4rem;
+}
+
+.pb-1 {
+  padding-bottom: 1rem;
 }
 
 .pb-2 {
@@ -143,6 +151,10 @@ body {
   font-size: 1.5rem;
 }
 
+.text-title {
+  font-size: 1rem;
+}
+
 .text-big {
   font-size: 0.9rem;
 }
@@ -169,6 +181,10 @@ body {
 
 .image-30 {
   width: 30%;
+}
+
+.image-20 {
+  width: 20%;
 }
 
 .image {
@@ -314,8 +330,8 @@ ion-card-title {
   z-index: 1;
 }
 
-.gold-image-blur {
-background: radial-gradient(circle, rgba(240,230,216,1) 0%, rgba(255,255,255,1) 69%, rgba(255,255,255,1) 100%);
+.gray-image-blur {
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(221,221,221,1) 70%, rgba(221,221,221,1) 100%);
 }
 
 .width-50 {
@@ -337,6 +353,8 @@ ion-button.width-10 {
 
 ion-button.width-10 button {
   padding: 0;
+  --box-shadow: none;
+  --background: none;
 }
 
 ion-buttons {
@@ -365,6 +383,15 @@ ion-buttons {
   linear-gradient(184deg, rgba(251,248,244,1) 0%, rgba(184,138,68,1) 100%);
   background-origin: border-box;
   background-clip: content-box, padding-box, border-box, border-box;*/
+}
+
+.example-container {
+  background: #dddddd;
+  flex-direction: column;
+  border-radius: 2rem;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(221,221,221,0.49);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(221,221,221,0.49);
+  box-shadow: 5px 5px 5px 0px rgba(221,221,221,0.49);
 }
 
 /*ion-button.button-native {

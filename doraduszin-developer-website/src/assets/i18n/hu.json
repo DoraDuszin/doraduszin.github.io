@@ -19,7 +19,8 @@
     "about": "Rólam",
     "projects": "Projektek",
     "services": "Szolgáltatások",
-    "contact": "Elérhetőség"
+    "contact": "Elérhetőség",
+    "experience-services": "Tapasztalat és szolgáltatások"
   },
   "content": {
     "about": {
@@ -31,10 +32,13 @@
       "section-4": "... ezáltal a szakmai jártasságon túl jelentős tapasztalatot szereztem különböző, közös munkára épülő dinamikus, agilis környezetben, ahol több nyelven is erős kommunikációs készségemet tudtam kamatoztatni.",
       "section-5": "Csatlakozz hozzám az egész életen át tartó tanulás és innováció útján a szoftverfejlesztés dinamikus világában!",
       "example": {
-        "cloud": "felhőalapú tárolási és szinkronizálási szolgáltatások fejlesztésétől kezdve",
-        "webshop": "robusztus adminisztrációs rendszerek és webáruházak kiépítésén keresztül",
-        "database": "egészen a mikroszolgáltatás-fejlesztés és adatbázis-építésig"
+        "cloud": "cloud storage and synchronization services",
+        "webshop": "robust administration systems and webshops",
+        "database": "microservice development and database construction"
       }
+    },
+    "experience-services": {
+      "section-1": "Over the years I consistently delivered high-quality and reliable software for leading clients using the latest technologies."
     },
     "projects": {
       "devpoint": "devpoint GmbH",

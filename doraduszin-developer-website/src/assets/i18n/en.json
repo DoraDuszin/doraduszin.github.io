@@ -41,10 +41,13 @@
       }
     },
     "experience-services": {
+      "devops-other": "devOps & other",
       "section-1": "Over the years I consistently delivered high-quality and reliable software for leading clients using the latest technologies.",
       "section-2": "My expertise spans a wide range of programming languages and tools covering both front and backend development.",
       "skills": {
-        "frontend": "TypeScript, JavaScript, Angular, React, Ionic, Node.js, PrimeNG, Angular Material, Bootstrap, DevExpress, HTML, CSS"
+        "frontend": "TypeScript, JavaScript, Angular, React, Ionic, Node.js, PrimeNG, Angular Material, Bootstrap, DevExpress, HTML, CSS",
+        "backend": "Java, Kotlin, C#, Spring, Spring Boot, .Net, .Net Core, MongoDb, MSSQL, PostgreSQL, MySQL, Hibernate, Entity Framework, Maven, Gradle, Ant",
+        "devops-other": "Docker, Kubernetes, Jenkins, Bamboo, AWS, Azure, CloudFoundry, Elasticsearch, JUnit5, Jira, Confluence, Git, GitHub, Bitbucket"
       }
     },
     "projects": {

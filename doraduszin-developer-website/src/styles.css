@@ -161,7 +161,7 @@ body {
 }
 
 .text-title {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 .text-big {
@@ -169,7 +169,7 @@ body {
 }
 
 .text-normal {
-  font-size: 12px;
+  font-size: 0.8rem
 }
 
 .text-italic {
@@ -182,6 +182,10 @@ body {
 
 .text-align-end {
   text-align: end;
+}
+
+.image-10 {
+  width: 10%;
 }
 
 .image-20 {
@@ -202,6 +206,10 @@ body {
 
 .image-50 {
   width: 50%;
+}
+
+.image-80 {
+  width: 80%;
 }
 
 .image-100 {
@@ -353,6 +361,14 @@ ion-card-title {
 
 .width-10 {
   width: 10%;
+}
+
+.width-20 {
+  width: 20%;
+}
+
+.width-80 {
+  width: 80%;
 }
 
 ion-button.width-10 {

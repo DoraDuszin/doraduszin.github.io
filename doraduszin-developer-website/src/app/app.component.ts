@@ -21,7 +21,7 @@ export class AppComponent implements OnInit {
         typingAnimation.classList.add('typing');
       }
     }, 2000);
-    this.translocoService.selectTranslateObject('content.intro.title').subscribe(translation => {
+    /*this.translocoService.selectTranslateObject('content.intro.title').subscribe(translation => {
       this.selfIntroText = translation;
       const style = document.createElement('style');
       style.innerHTML = `
@@ -30,7 +30,7 @@ export class AppComponent implements OnInit {
       }
     `;
       document.head.appendChild(style);
-    });
+    });*/
   }
 
   tabChanged(tab: string): void {
@@ -45,8 +45,8 @@ export class AppComponent implements OnInit {
     return this.translocoService.getActiveLang() !== value;
   }
 
-  getSelfIntroSteps(): number {
+  /*getSelfIntroSteps(): number {
     console.log('selfintro: ', this.selfIntroText.length);
-    return this.selfIntroText.length + 1;
-  }
+    return this.selfIntroText.length;
+  }*/
 }

@@ -47,7 +47,10 @@
     <ion-col class="display-flex">
       <div class="content-container welcome-container">
         <div class="title">
-          <ion-label class="code-text text-huge">{{ t('content.about.welcome') }}<span id="typing-dots"></span></ion-label>
+          <ion-label id="hello-world-animated" class="code-text text-huge">{{ t('content.about.welcome') }}<span
+            id="typing-dots"></span></ion-label>
+          <ion-label id="hello-world-small"
+                     class="code-text text-huge">{{ t('content.about.welcome-small') }}</ion-label>
         </div>
       </div>
     </ion-col>
@@ -88,7 +91,7 @@
   <ion-row>
     <ion-col>
       <div class="content-container display-flex justify-content-center">
-        <img class="image floating" src="assets/icons/cloud_sync_black.png">
+        <img class="image floating gold-image-blur" src="assets/icons/cloud_curvy_black.svg">
       </div>
     </ion-col>
   </ion-row>
@@ -102,9 +105,9 @@
     </ion-col>
   </ion-row>
   <ion-row>
-    <ion-col class="pt-4">
+    <ion-col class="pt-2-5">
       <div class="content-container display-flex justify-content-center">
-        <img class="image pushing" src="assets/icons/webshop_black.svg">
+        <img class="image pushing gold-image-blur" src="assets/icons/shop_curvy_black.svg">
       </div>
     </ion-col>
   </ion-row>
@@ -118,9 +121,9 @@
     </ion-col>
   </ion-row>
   <ion-row>
-    <ion-col class="pt-4">
+    <ion-col class="pt-2-5">
       <div class="content-container display-flex justify-content-center">
-        <img class="image-30 upDown" src="assets/icons/database_black.svg">
+        <img class="image-30 upDown gold-image-blur" src="assets/icons/data_curvy_black.svg">
       </div>
     </ion-col>
   </ion-row>
@@ -165,77 +168,96 @@
     </ion-col>
   </ion-row>
   <ion-row>
-    <div class="background-black">
-      <div>
-        <ion-card class="m-0">
-          <div class="card-image-container">
-            <img src="assets/images/project.png" class="image-50"/>
-          </div>
-          <ion-card-header class="border-top-gold background-black pt-2">
-            <ion-card-title class="text-white">{{ t('content.projects.project-1.title') }}</ion-card-title>
-            <ion-card-subtitle class="text-light-gray">{{ t('content.projects.devpoint') }} / {{ t('content.projects.contractor') }}</ion-card-subtitle>
-            <ion-card-subtitle class="text-italic text-light-gray">{{ t('content.projects.project-1.date') }}</ion-card-subtitle>
-          </ion-card-header>
-          <ion-card-content class="background-black text-white">
-            {{ t('content.projects.project-1.description') }}
-          </ion-card-content>
-        </ion-card>
-      </div>
-    </div>
-  </ion-row>
-  <ion-row>
-    <div class="background-black">
-      <div>
-        <ion-card class="m-0">
-          <div class="card-image-container">
-            <img src="assets/images/project.png" class="image-50"/>
-          </div>
-          <ion-card-header class="border-top-gold background-black pt-2">
-            <ion-card-title class="text-white">{{ t('content.projects.project-2.title') }}</ion-card-title>
-            <ion-card-subtitle class="text-light-gray">{{ t('content.projects.devpoint') }} / {{ t('content.projects.contractor') }}</ion-card-subtitle>
-            <ion-card-subtitle class="text-italic text-light-gray">{{ t('content.projects.project-2.date') }}</ion-card-subtitle>
-          </ion-card-header>
-          <ion-card-content class="background-black text-white">
-            {{ t('content.projects.project-2.description') }}
-          </ion-card-content>
-        </ion-card>
-      </div>
-    </div>
-  </ion-row>
-  <ion-row>
-    <div class="background-black">
-      <ion-card class="m-0">
-        <div class="card-image-container">
-          <img src="assets/images/project.png" class="image-50"/>
+    <ion-card class="outer-card">
+      <div class="background-black">
+        <div class="card-container">
+          <ion-card class="inner-card">
+            <div class="card-image-container">
+              <img src="assets/images/project.png" class="image-50"/>
+            </div>
+            <div class="card-gradient">
+              <ion-card-header class="border-top-gold pt-2">
+                <ion-card-title>{{ t('content.projects.project-1.title') }}</ion-card-title>
+                <ion-card-subtitle>{{ t('content.projects.devpoint') }}
+                  / {{ t('content.projects.contractor') }}</ion-card-subtitle>
+                <ion-card-subtitle class="text-italic">{{ t('content.projects.project-1.date') }}</ion-card-subtitle>
+              </ion-card-header>
+              <ion-card-content>
+                {{ t('content.projects.project-1.description') }}
+              </ion-card-content>
+            </div>
+          </ion-card>
         </div>
-        <ion-card-header class="border-top-gold background-black pt-2">
-          <ion-card-title class="text-white">{{ t('content.projects.project-3.title') }}</ion-card-title>
-          <ion-card-subtitle class="text-light-gray">{{ t('content.projects.devpoint') }} / {{ t('content.projects.contractor') }}</ion-card-subtitle>
-          <ion-card-subtitle class="text-italic text-light-gray">{{ t('content.projects.project-3.date') }}</ion-card-subtitle>
-        </ion-card-header>
-        <ion-card-content class="background-black text-white">
-          {{ t('content.projects.project-3.description') }}
-        </ion-card-content>
-      </ion-card>
-    </div>
+      </div>
+    </ion-card>
+  </ion-row>
+  <ion-row>
+    <ion-card class="outer-card">
+      <div class="background-black">
+        <div class="card-container">
+          <ion-card class="inner-card">
+            <div class="card-image-container">
+              <img src="assets/images/project.png" class="image-50"/>
+            </div>
+            <div class="card-gradient">
+              <ion-card-header class="border-top-gold pt-2">
+                <ion-card-title>{{ t('content.projects.project-2.title') }}</ion-card-title>
+                <ion-card-subtitle>{{ t('content.projects.devpoint') }}
+                  / {{ t('content.projects.contractor') }}</ion-card-subtitle>
+                <ion-card-subtitle class="text-italic">{{ t('content.projects.project-2.date') }}</ion-card-subtitle>
+              </ion-card-header>
+              <ion-card-content>
+                {{ t('content.projects.project-2.description') }}
+              </ion-card-content>
+            </div>
+          </ion-card>
+        </div>
+      </div>
+    </ion-card>
+  </ion-row>
+  <ion-row>
+    <ion-card class="outer-card">
+      <div class="background-black">
+        <div class="card-container">
+          <ion-card class="inner-card">
+            <div class="card-image-container">
+              <img src="assets/images/project.png" class="image-50"/>
+            </div>
+            <div class="card-gradient">
+              <ion-card-header class="border-top-gold pt-2">
+                <ion-card-title>{{ t('content.projects.project-3.title') }}</ion-card-title>
+                <ion-card-subtitle>{{ t('content.projects.devpoint') }}
+                  / {{ t('content.projects.contractor') }}</ion-card-subtitle>
+                <ion-card-subtitle class="text-italic">{{ t('content.projects.project-3.date') }}</ion-card-subtitle>
+              </ion-card-header>
+              <ion-card-content>
+                {{ t('content.projects.project-3.description') }}
+              </ion-card-content>
+            </div>
+          </ion-card>
+        </div>
+      </div>
+    </ion-card>
   </ion-row>
   <ion-row>
     <ion-col class="display-flex">
       <div class="content-container welcome-container">
-        <div class="title">
-          <ion-label class="code-text text-big typing-animation" [textContent]="selfIntroText"></ion-label>
+        <div class="title" style="width: fit-content">
+          <ion-label class="code-text text-big typing-animation">{{ t('content.intro.title') }}</ion-label>
         </div>
       </div>
     </ion-col>
   </ion-row>
   <ion-row>
+    <!--<div class="outer-circle">-->
     <ion-col class="display-flex">
-      <div class="content-container welcome-container">
+      <div class="content-container pb-2">
         <div class="display-flex justify-content-center">
-          <img src="assets/images/cat2.jpg" class="image-100 border-radius-50"/>
+          <img src="assets/images/profile_picture.jpg" class="image-100 border-radius-50 inner-circle"/>
         </div>
       </div>
     </ion-col>
+    <!--</div>-->
   </ion-row>
   <ion-row class="pb-4">
     <ion-col class="display-flex">
@@ -250,7 +272,23 @@
   </ion-row>
   <ion-footer>
     <ion-toolbar>
-      <ion-title>Footer \later. </ion-title>
+      <ion-row>
+        <div class="content-container display-flex">
+          <ion-col class="display-flex align-items-center">
+            <div class="display-flex justify-content-evenly">
+              <ion-label class="text-normal">
+                {{ t('general.symbols.copyright') }} {{ t('general.personal.details.name') }} {{ t('general.year') }}
+              </ion-label>
+            </div>
+          </ion-col>
+          <ion-col class="display-flex align-items-center">
+            <div class="display-flex justify-content-end">
+              <img src="assets/icons/linkedin_white.svg" class="image-20 pr-1"/>
+              <img src="assets/icons/mail_white.svg" class="image-20"/>
+            </div>
+          </ion-col>
+        </div>
+      </ion-row>
     </ion-toolbar>
   </ion-footer>
 

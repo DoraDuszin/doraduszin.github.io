@@ -1,5 +1,9 @@
 {
   "general": {
+    "symbols": {
+      "copyright": "©"
+    },
+    "year": "2024",
     "personal": {
       "details": {
         "name": "Duszin Dóra"
@@ -15,6 +19,7 @@
   "content": {
     "about": {
       "welcome": "Hello, World",
+      "welcome-small": "Hello, World ...",
       "section-1": "Duszin Dóra vagyok, full-stack szabadúszó szoftverfejlesztő több mint 7 év szakmai tapasztalattal különböző iparágak és technológiák terén.",
       "section-2": "A bázisom a spanyolországi Valenciában található, de lehetőségem volt több nemzetközi csapattal együttműködni Európa-szerte.",
       "section-3": "Szerencsém volt számos különböző ügyféllel együttműködni a ...",
@@ -46,7 +51,7 @@
       }
     },
     "intro": {
-      "title": "... nice to meet you!"
+      "title": "continue;"
     },
     "contact": {
       "section-1": "If you're interested in getting to know more about how we can collaborate, contact me below!"

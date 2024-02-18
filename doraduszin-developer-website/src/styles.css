@@ -507,6 +507,10 @@ ion-button.language-button {
   align-items: center;
 }
 
+.gray-border-top {
+  border-top: 1px solid #e2e2e2;
+}
+
 /*ion-button.button-native {
   padding: 0;
   background: white;

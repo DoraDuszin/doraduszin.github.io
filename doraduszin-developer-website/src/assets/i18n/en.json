@@ -2,6 +2,9 @@
   "general": {
     "frontend": "frontend",
     "backend": "backend",
+    "buttons": {
+      "more": "more"
+    },
     "symbols": {
       "copyright": "©"
     },
@@ -59,7 +62,14 @@
       "project-1": {
         "title": "Administration System and Webshop",
         "date": "01/2023 - Present",
-        "description": "Full-stack web development of an innovative administration system and webshop for a leading Swiss cable & satellite client providing IT- and cloud services, network, datacenter and internet."
+        "description": "Full-stack web development of an innovative administration system and webshop for a leading Swiss cable & satellite client providing IT- and cloud services, network, datacenter and internet.",
+        "detailed-description": {
+          "summary": "summary",
+          "tasks": {
+            "first": "Engaging in the full-stack web development of an innovative administration system and webshop, ensuring a seamless user experience",
+            "second": "Improving design, architecture and database construction throughout the entire software development lifecycle for better integration capabilities"
+          }
+        }
       },
       "project-2": {
         "title": "Cloud Storage and Synchronization Service",
@@ -77,6 +87,11 @@
     },
     "contact": {
       "section-1": "If you're interested in getting to know more about how we can collaborate, contact me below!"
+    }
+  },
+  "modal": {
+    "projects": {
+      "details": "Details"
     }
   }
 }

@@ -1,29 +1,23 @@
-<ion-header>
+<ion-content *transloco="let t">
   <ion-toolbar>
-    <ion-title>App</ion-title>
+    <ion-title>{{ t('modal.projects.details') }}</ion-title>
+    <!--<ion-title class="secondary-header">{{ projectName }}</ion-title>-->
+    <ion-buttons slot="end">
+      <ion-button class="width-30"(click)="close()">
+        <img class="image-100" src="assets/icons/ionic/close-outline.png">
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
-</ion-header>
-<ion-content class="ion-padding">
-  <ion-button id="open-custom-dialog" expand="block">Open Custom Dialog</ion-button>
-  <ion-modal id="example-modal" #modal trigger="open-custom-dialog">
-    <ng-template>
-      <div class="wrapper">
-        <h1>Dialog header</h1>
-        <ion-list lines="none">
-          <ion-item button="true" detail="false" (click)="modal.dismiss()">
-            <ion-icon name="person-circle"></ion-icon>
-            <ion-label>Item 1</ion-label>
-          </ion-item>
-          <ion-item button="true" detail="false" (click)="modal.dismiss()">
-            <ion-icon name="person-circle"></ion-icon>
-            <ion-label>Item 2</ion-label>
-          </ion-item>
-          <ion-item button="true" detail="false" (click)="modal.dismiss()">
-            <ion-icon name="person-circle"></ion-icon>
-            <ion-label>Item 3</ion-label>
-          </ion-item>
-        </ion-list>
-      </div>
-    </ng-template>
-  </ion-modal>
+  <div class="modal-container">
+    <ion-label class="secondary-header">{{ projectName }}</ion-label>
+    <ion-label class="regular-text pt-1 pb-1">{{ projectSummary }}</ion-label>
+    <div class="list-container">
+      <img class="image-5" src="assets/icons/ionic/ellipse-outline.svg">
+      <ion-label class="text-normal pl-1">{{ tasks.first }}</ion-label>
+    </div>
+    <div class="list-container pt-1">
+      <img class="image-5" src="assets/icons/ionic/ellipse-outline.svg">
+      <ion-label class="text-normal pl-1">{{ tasks.second }}</ion-label>
+    </div>
+  </div>
 </ion-content>

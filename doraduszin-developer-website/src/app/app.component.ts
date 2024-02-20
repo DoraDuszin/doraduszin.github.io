@@ -19,6 +19,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    /*this.openProjectDetails(1);*/
     setTimeout(() => {
       const typingAnimation = document.getElementById('typing-animation');
       if (typingAnimation) {
@@ -44,10 +45,12 @@ export class AppComponent implements OnInit {
     return this.showLanguages && this.translocoService.getActiveLang() !== value;
   }
 
-  async openProjectDetails(): Promise<void> {
+  async openProjectDetails(projectNumber: number): Promise<void> {
     const modal = await this.modalController.create({
       component: ProjectDetailComponent,
-      cssClass: 'my-custom-modal-css'
+      componentProps: {
+        projectNumber: 1
+      }
     });
     return await modal.present();
   }

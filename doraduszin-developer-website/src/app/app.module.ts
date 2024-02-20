@@ -8,17 +8,21 @@ import { IonicModule } from '@ionic/angular';
 import { HttpClientModule } from '@angular/common/http';
 import { TranslocoRootModule } from './transloco-root.module';
 import {CommonModule} from '@angular/common';
+import {ProjectDetailComponent} from './components/project-detail-component/project-detail-component.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ProjectDetailComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     TranslocoRootModule,
     CommonModule,
-    IonicModule.forRoot(),
+    IonicModule.forRoot({
+      scrollAssist: false
+    }),
     HttpClientModule
   ],
   providers: [],

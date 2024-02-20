@@ -4,7 +4,7 @@
       <ion-header>
         <ion-toolbar class="pr-1-5">
           <ion-title class="pl-1-5">{{ t('general.personal.details.name') }}</ion-title>
-          <ion-buttons slot="end" [ngClass]="{'show-languages': showLanguages}">
+          <ion-buttons slot="end" [ngClass]="{'gold-button-border': showLanguages}">
             <ion-button *ngIf="showLangButton('en')" class="width-10 language-button" (click)="changeLanguage('en')">
               {{ t('general.languages.en') }}
             </ion-button>
@@ -15,21 +15,9 @@
               {{ t('general.languages.hu') }}
             </ion-button>
             <ion-button class="width-10 language-button pr-0-5" (click)="toggleLanguages()">
-              <img class="image-100" src="assets/icons/ionic/globe-outline-white.svg">
+              <img class="image-100" src="assets/icons/web_white_gold_fill.png">
             </ion-button>
           </ion-buttons>
-
-          <!--<ion-buttons slot="end" class="pr-1-5" style="width: 17%">
-            <ion-button class="flag-icon flag-icon-gb width-50 flag-margin" *ngIf="showLangButton('en')" (click)="changeLanguage('en')">
-              &lt;!&ndash;<span class="flag-icon flag-icon-gb"></span>&ndash;&gt;
-            </ion-button>
-            <ion-button  class="flag-icon flag-icon-es width-50 flag-margin" *ngIf="showLangButton('es')" (click)="changeLanguage('es')">
-              &lt;!&ndash;<span class="flag-icon flag-icon-es"></span>&ndash;&gt;
-            </ion-button>
-            <ion-button class="flag-icon flag-icon-hu width-50 flag-margin" *ngIf="showLangButton('hu')" (click)="changeLanguage('hu')">
-              &lt;!&ndash;<span class="flag-icon flag-icon-hu"></span>&ndash;&gt;
-            </ion-button>
-          </ion-buttons>-->
         </ion-toolbar>
       </ion-header>
     </ion-col>
@@ -174,7 +162,7 @@
       <ion-row class="p-1">
         <ion-col class="display-flex align-items-center">
           <ion-label class="display-flex width-80">
-            <div class="skills-characters"><</div>
+            <!--<div class="skills-characters"><</div>-->
             <div class="color-gold skills-characters">\</div>
             <div class="skills-characters">></div>
             <div class="secondary-header align-items-center">&nbsp;{{ t('general.frontend') }}</div>
@@ -333,7 +321,7 @@
     </ion-col>
   </ion-row>
   <ion-row>
-    <ion-card class="outer-card-black" (click)="openProjectDetails()">
+    <ion-card class="outer-card-black">
       <div class="background-black">
         <div class="card-container">
           <ion-card class="inner-card">
@@ -350,6 +338,11 @@
               </ion-card-header>
               <ion-card-content class="regular-text">
                 {{ t('content.projects.project-1.description') }}
+                <ion-buttons slot="end" class="width-100">
+                  <ion-button class="uppercase gold-button-border pr-0-5 pl-0-5 project-button" (click)="openProjectDetails(1)">
+                    {{ t('general.buttons.more') }}
+                  </ion-button>
+                </ion-buttons>
               </ion-card-content>
             </div>
           </ion-card>
@@ -375,6 +368,11 @@
               </ion-card-header>
               <ion-card-content class="regular-text">
                 {{ t('content.projects.project-2.description') }}
+                <ion-buttons slot="end" class="width-100">
+                  <ion-button class="uppercase gold-button-border pr-0-5 pl-0-5 project-button">
+                    {{ t('general.buttons.more') }}
+                  </ion-button>
+                </ion-buttons>
               </ion-card-content>
             </div>
           </ion-card>
@@ -400,6 +398,11 @@
               </ion-card-header>
               <ion-card-content class="regular-text">
                 {{ t('content.projects.project-3.description') }}
+                <ion-buttons slot="end" class="width-100">
+                  <ion-button class="uppercase gold-button-border pr-0-5 pl-0-5 project-button">
+                    {{ t('general.buttons.more') }}
+                  </ion-button>
+                </ion-buttons>
               </ion-card-content>
             </div>
           </ion-card>

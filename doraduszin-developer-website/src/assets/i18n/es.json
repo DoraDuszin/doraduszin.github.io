@@ -3,7 +3,9 @@
     "frontend": "frontend",
     "backend": "backend",
     "buttons": {
-      "more": "more"
+      "more": "more",
+      "see-more": "see more",
+      "details": "details"
     },
     "symbols": {
       "copyright": "©"
@@ -21,22 +23,23 @@
     }
   },
   "header": {
-    "about": "Introducción",
-    "projects": "Proyectos",
-    "projects-latest": "Proyectos Recientes",
-    "services": "Servicios",
-    "contact": "Contacto",
-    "experience-services": "Experiencia y Servicios"
+    "about": "About",
+    "projects": "Projects",
+    "projects-latest": "Latest Projects",
+    "services": "Services",
+    "contact": "Contact",
+    "experience-services": "Experience and Services"
   },
   "content": {
     "about": {
       "welcome": "Hello, World",
       "welcome-small": "Hello, World ...",
-      "section-1": "Soy Dora Duszin, una desarrolladora full-stack freelance de software con más de 7 años de experiencia en diversas industrias y tecnologías.",
-      "section-2": "Tengo mi base en Valencia, España, pero he tenido la oportunidad de cooperar con varios equipos internacionales en toda Europa.",
-      "section-3": "He colaborado con clientes diferentes para ...",
-      "section-4": "... además de capacidades técnicas, he obtenido una amplia experiencia en entornos ágiles y colaborativos, ofreciendo habilidades de comunicación sólidas en varios idiomas.",
-      "section-5": "¡Acompáñame mientras continúo mi viaje de innovación y aprendizaje continuo en el dinámico mundo del desarrollo de software!",
+      "section-1": "My name is Dora Duszin, I'm a full-stack freelance software developer with over 7 years of experience across diverse industries and technologies.",
+      "section-2": "I'm based in Valencia, Spain - but have had the chance to cooperate with many international teams across Europe.",
+      "section-3": "I was able to collaborate with clients ...",
+      "section-3": "I was able to collaborate with clients ...",
+      "section-4": "... and beyond technical proficiency, gain substantial experience in collaborative agile environments, offering strong communication skills in multiple languages.",
+      "section-5": "Explore my site to discover how we can collaborate and drive excellence together!",
       "example": {
         "cloud": "cloud storage and synchronization services",
         "webshop": "robust administration systems and webshops",
@@ -58,6 +61,10 @@
     "projects": {
       "devpoint": "devpoint GmbH",
       "contractor": "contractor",
+      "description-1": "For the past 4 years, I have been collaborating with devpoint GmbH, a distinguished Swiss agile software development company, reputable for its diverse clientele and projects.",
+      "description-2": "As a freelance contributor, I've had the privilege of working on 3 distinct projects across different sectors, actively engaging in delivering tailored solutions to meet the needs of each client.",
+      "description-3": "These experiences have enhanced my abilities to navigate and adapt to diverse project scopes, working with several different teams and technical approaches.",
+      "description-4": "For a comprehensive overview of my professional journey, please refer to my full employment and education history by clicking below.",
       "project-1": {
         "title": "Administration System and Webshop",
         "date": "01/2023 - Present",

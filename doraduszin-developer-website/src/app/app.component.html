@@ -14,8 +14,8 @@
             <ion-button *ngIf="showLangButton('hu')" class="width-10 language-button" (click)="changeLanguage('hu')">
               {{ t('general.languages.hu') }}
             </ion-button>
-            <ion-button class="width-10 language-button pr-0-5" (click)="toggleLanguages()">
-              <img class="image-100" src="assets/icons/web_white_gold_fill.png">
+            <ion-button class="width-10 language-button m-0" (click)="toggleLanguages()">
+              <img class="image-100" src="assets/icons/ionic/globe-outline-white.svg">
             </ion-button>
           </ion-buttons>
         </ion-toolbar>
@@ -312,10 +312,19 @@
     </ion-col>
   </ion-row>
   <ion-row>
+    <ion-col class="display-flex background-black pt-1">
+      <div class="content-container">
+        <ion-label class="text-normal text-white">
+          {{ t('content.projects.description-1') }}
+        </ion-label>
+      </div>
+    </ion-col>
+  </ion-row>
+  <ion-row>
     <ion-col class="display-flex background-black pt-1 pb-4">
       <div class="content-container">
         <ion-label class="text-normal text-white">
-          project blabla
+          {{ t('content.projects.description-2') }}
         </ion-label>
       </div>
     </ion-col>
@@ -338,9 +347,9 @@
               </ion-card-header>
               <ion-card-content class="regular-text">
                 {{ t('content.projects.project-1.description') }}
-                <ion-buttons slot="end" class="width-100">
+                <ion-buttons slot="end" class="width-100 pt-1">
                   <ion-button class="uppercase gold-button-border pr-0-5 pl-0-5 project-button" (click)="openProjectDetails(1)">
-                    {{ t('general.buttons.more') }}
+                    {{ t('general.buttons.details') }}
                   </ion-button>
                 </ion-buttons>
               </ion-card-content>
@@ -368,9 +377,9 @@
               </ion-card-header>
               <ion-card-content class="regular-text">
                 {{ t('content.projects.project-2.description') }}
-                <ion-buttons slot="end" class="width-100">
+                <ion-buttons slot="end" class="width-100 pt-1">
                   <ion-button class="uppercase gold-button-border pr-0-5 pl-0-5 project-button">
-                    {{ t('general.buttons.more') }}
+                    {{ t('general.buttons.details') }}
                   </ion-button>
                 </ion-buttons>
               </ion-card-content>
@@ -398,9 +407,9 @@
               </ion-card-header>
               <ion-card-content class="regular-text">
                 {{ t('content.projects.project-3.description') }}
-                <ion-buttons slot="end" class="width-100">
+                <ion-buttons slot="end" class="width-100 pt-1">
                   <ion-button class="uppercase gold-button-border pr-0-5 pl-0-5 project-button">
-                    {{ t('general.buttons.more') }}
+                    {{ t('general.buttons.details') }}
                   </ion-button>
                 </ion-buttons>
               </ion-card-content>
@@ -409,6 +418,35 @@
         </div>
       </div>
     </ion-card>
+  </ion-row>
+  <ion-row>
+    <ion-col class="display-flex background-black pt-1">
+      <div class="content-container">
+        <ion-label class="text-normal text-white">
+          {{ t('content.projects.description-3') }}
+        </ion-label>
+      </div>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col class="display-flex background-black pt-1">
+      <div class="content-container">
+        <ion-label class="text-normal text-white">
+          {{ t('content.projects.description-4') }}
+        </ion-label>
+      </div>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col class="display-flex justify-content-center align-items-center background-black pt-2 pb-4">
+      <div class="content-container">
+        <ion-buttons class="width-100">
+          <ion-button class="uppercase gold-button-border pr-0-5 pl-0-5 project-button white-button">
+            {{ t('general.buttons.see-more') }}
+          </ion-button>
+        </ion-buttons>
+      </div>
+    </ion-col>
   </ion-row>
   <ion-row>
     <ion-col class="display-flex">

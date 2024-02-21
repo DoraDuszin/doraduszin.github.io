@@ -37,6 +37,7 @@ body.backdrop-no-scroll {
 .secondary-header {
   font-size: 1rem;
   font-weight: 600;
+  text-transform: none;
 }
 
 .regular-text {
@@ -56,9 +57,17 @@ ion-title {
   text-transform: uppercase;
 }
 
+.lowercase {
+  text-transform: lowercase;
+}
+
 .project-button {
   font-size: 0.8rem;
   font-weight: 600;
+}
+
+.white-button {
+  background-color: var(--white-color);
 }
 
 .p-1 {
@@ -610,7 +619,7 @@ ion-title {
 }
 
 ion-modal {
-  --height: 70%;
+  --height: 90%;
   --border-radius: 2rem;
   --position: fixed;
   position: fixed;
@@ -649,6 +658,11 @@ ion-modal ion-buttons {
 
 ion-modal ion-button {
   margin: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+ion-button {
+  -webkit-tap-highlight-color: transparent;
 }
 
 /*ion-button.button-native {

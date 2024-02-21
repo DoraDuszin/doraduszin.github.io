@@ -11,3 +11,10 @@
 .list-container {
   display: flex;
 }
+
+.client-text {
+  font-size: .8rem;
+  font-weight: 400;
+  text-transform: none;
+  color: var(--gold-color);
+}

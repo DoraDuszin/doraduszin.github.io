@@ -11,10 +11,15 @@ export class ProjectDetailComponent implements OnInit {
 
   @Input() projectNumber: number;
   projectName = '';
-  projectSummary = '';
-  tasks = {
+  client = '';
+  projectSummary = {
     first: '',
     second: ''
+  };
+  tasks = {
+    first: '',
+    second: '',
+    third: ''
   };
 
   constructor(private modalController: ModalController,
@@ -29,12 +34,15 @@ export class ProjectDetailComponent implements OnInit {
     });
     this.translocoService.selectTranslateObject('content.projects.project-' + this.projectNumber + '.detailed-description')
       .subscribe(translation => {
-        this.projectSummary = translation.summary;
+        this.client = translation.client;
+        this.projectSummary.first = translation.summary.first;
+        this.projectSummary.second = translation.summary.second;
       });
     this.translocoService.selectTranslateObject('content.projects.project-' + this.projectNumber + '.detailed-description.tasks')
       .subscribe(translation => {
         this.tasks.first = translation.first;
         this.tasks.second = translation.second;
+        this.tasks.third = translation.third;
       });
   }
 

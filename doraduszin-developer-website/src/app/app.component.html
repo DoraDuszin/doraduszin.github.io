@@ -4,7 +4,7 @@
       <ion-header>
         <ion-toolbar class="pr-1-5">
           <ion-title class="pl-1-5">{{ t('general.personal.details.name') }}</ion-title>
-          <ion-buttons slot="end" [ngClass]="{'gold-button-border': showLanguages}">
+          <ion-buttons slot="end" class="pr-0-5" [ngClass]="{'gold-button-border': showLanguages}">
             <ion-button *ngIf="showLangButton('en')" class="width-10 language-button" (click)="changeLanguage('en')">
               {{ t('general.languages.en') }}
             </ion-button>
@@ -15,7 +15,7 @@
               {{ t('general.languages.hu') }}
             </ion-button>
             <ion-button class="width-10 language-button m-0" (click)="toggleLanguages()">
-              <img class="image-100" src="assets/icons/ionic/globe-outline-white.svg">
+              <img class="image-100" src="assets/icons/white_globe.svg">
             </ion-button>
           </ion-buttons>
         </ion-toolbar>
@@ -441,7 +441,7 @@
     <ion-col class="display-flex justify-content-center align-items-center background-black pt-2 pb-4">
       <div class="content-container">
         <ion-buttons class="width-100">
-          <ion-button class="uppercase gold-button-border pr-0-5 pl-0-5 project-button white-button">
+          <ion-button class="uppercase gold-button-border pr-0-5 pl-0-5 project-button black-button">
             {{ t('general.buttons.see-more') }}
           </ion-button>
         </ion-buttons>

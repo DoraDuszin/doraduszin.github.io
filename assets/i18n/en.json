@@ -2,6 +2,8 @@
   "general": {
     "frontend": "frontend",
     "backend": "backend",
+    "client": "Client",
+    "stack": "Stack",
     "buttons": {
       "more": "more",
       "see-more": "see more",
@@ -70,10 +72,15 @@
         "date": "01/2023 - Present",
         "description": "Full-stack web development of an innovative administration system and webshop for a leading Swiss cable & satellite client providing IT- and cloud services, network, datacenter and internet.",
         "detailed-description": {
-          "summary": "summary",
+          "client": "Swiss cable & satellite provider",
+          "summary": {
+            "first": "Webshop for ordering network, IT- and cloud service-related products, services, and bundles tailored for both residential and business users.",
+            "second": "Web-based administration platform utilized by the client's employees and dedicated admin users for managing internal processes, offers, and more."
+          },
           "tasks": {
-            "first": "Engaging in the full-stack web development of an innovative administration system and webshop, ensuring a seamless user experience",
-            "second": "Improving design, architecture and database construction throughout the entire software development lifecycle for better integration capabilities"
+            "first": "Key member of the full-stack web development and testing team for an innovative administration system and webshop",
+            "second": "Improving design, architecture and database construction while overseeing the entire software development lifecycle",
+            "third": "Ensuring optimal functionality and seamless user experience to drive profitable sales"
           }
         }
       },
@@ -97,7 +104,8 @@
   },
   "modal": {
     "projects": {
-      "details": "Details"
+      "details": "Details",
+      "responsibilities": "Key Responsibilities"
     }
   }
 }

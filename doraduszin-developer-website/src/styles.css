@@ -66,8 +66,9 @@ ion-title {
   font-weight: 600;
 }
 
-.white-button {
-  background-color: var(--white-color);
+.black-button {
+  background: none;
+  color: var(--white-color);
 }
 
 .p-1 {
@@ -282,6 +283,10 @@ ion-title {
 
 .image-5 {
   width: 5%;
+}
+
+.image-2 {
+  width: 2%;
 }
 
 .border-radius-50 {

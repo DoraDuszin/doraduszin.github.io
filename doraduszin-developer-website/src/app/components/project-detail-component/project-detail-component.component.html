@@ -2,7 +2,6 @@
 <div *transloco="let t">
   <ion-toolbar>
     <ion-title>{{ t('modal.projects.details') }}</ion-title>
-    <!--<ion-title class="secondary-header">{{ projectName }}</ion-title>-->
     <ion-buttons slot="end">
       <ion-button class="width-30"(click)="close()">
         <img class="image-100" src="assets/icons/ionic/close-outline.png">
@@ -11,14 +10,21 @@
   </ion-toolbar>
   <div class="modal-container">
     <ion-label class="secondary-header">{{ projectName }}</ion-label>
-    <ion-label class="regular-text pt-1 pb-1">{{ projectSummary }}</ion-label>
-    <div class="list-container">
-      <img class="image-5" src="assets/icons/ionic/ellipse-outline.svg">
+    <ion-label class="client-text pt-1">{{ client }}</ion-label>
+    <ion-label class="text-normal pt-1 pb-1">{{ projectSummary.first }}</ion-label>
+    <ion-label class="text-normal pb-1">{{ projectSummary.second }}</ion-label>
+    <ion-label class="secondary-header">{{ t('modal.projects.responsibilities') }}</ion-label>
+    <div class="list-container pt-1">
+      <img class="image-2" src="assets/icons/list_dot_gold.svg">
       <ion-label class="text-normal pl-1">{{ tasks.first }}</ion-label>
     </div>
     <div class="list-container pt-1">
-      <img class="image-5" src="assets/icons/ionic/ellipse-outline.svg">
+      <img class="image-2" src="assets/icons/list_dot_gold.svg">
       <ion-label class="text-normal pl-1">{{ tasks.second }}</ion-label>
+    </div>
+    <div class="list-container pt-1">
+      <img class="image-2" src="assets/icons/list_dot_gold.svg">
+      <ion-label class="text-normal pl-1">{{ tasks.third }}</ion-label>
     </div>
   </div>
 </div>

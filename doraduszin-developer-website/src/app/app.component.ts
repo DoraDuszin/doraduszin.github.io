@@ -13,6 +13,7 @@ export class AppComponent implements OnInit {
   selectedTab = 'about';
   selfIntroText = '';
   showLanguages = false;
+  scrollPosition = 0;
 
   constructor(private translocoService: TranslocoService,
               private modalController: ModalController) {
@@ -46,12 +47,16 @@ export class AppComponent implements OnInit {
   }
 
   async openProjectDetails(projectNumber: number): Promise<void> {
+    this.scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+    console.log('scrollPosition: ', this.scrollPosition);
     const modal = await this.modalController.create({
       component: ProjectDetailComponent,
       componentProps: {
         projectNumber: 1
       }
     });
-    return await modal.present();
+    return await modal.present().then(() => {
+      window.scrollTo(0, this.scrollPosition);
+    });
   }
 }

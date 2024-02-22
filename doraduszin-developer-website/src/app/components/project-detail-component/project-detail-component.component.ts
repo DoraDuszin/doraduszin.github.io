@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {IonicModule, ModalController} from '@ionic/angular';
+import {ModalController} from '@ionic/angular';
 import {TranslocoService} from '@ngneat/transloco';
 
 @Component({
@@ -21,6 +21,7 @@ export class ProjectDetailComponent implements OnInit {
     second: '',
     third: ''
   };
+  stack = '';
 
   constructor(private modalController: ModalController,
               private translocoService: TranslocoService) {
@@ -43,6 +44,10 @@ export class ProjectDetailComponent implements OnInit {
         this.tasks.first = translation.first;
         this.tasks.second = translation.second;
         this.tasks.third = translation.third;
+      });
+    this.translocoService.selectTranslateObject('content.projects.project-' + this.projectNumber + '.detailed-description.stack')
+      .subscribe(translation => {
+        this.stack = translation;
       });
   }
 

@@ -239,8 +239,7 @@
       </ion-row>
     </div>
   </div>
-  <div class="pt-2 content-container">// TODO: ide kene meg valami a vonalak miatt - lehet amugy csak a footer elott kell jobbra rakni</div>
-  <ion-row class="pt-2">
+  <!--<ion-row class="pt-2">
     <ion-col class="display-flex">
       <div class="content-container border-right-gold">
         <div class="section-left text-align-end">
@@ -261,8 +260,8 @@
         </div>
       </div>
     </ion-col>
-  </ion-row>
-  <!--<ion-row class="pt-4">
+  </ion-row>-->
+  <ion-row class="pt-4">
     <ion-col class="display-flex">
       <div class="content-container">
         <ion-label class="text-normal">
@@ -270,8 +269,8 @@
         </ion-label>
       </div>
     </ion-col>
-  </ion-row>-->
-  <!--<ion-row class="pt-1">
+  </ion-row>
+  <ion-row class="pt-1">
     <ion-col class="display-flex">
       <div class="content-container">
         <ion-label class="text-normal">
@@ -279,7 +278,7 @@
         </ion-label>
       </div>
     </ion-col>
-  </ion-row>-->
+  </ion-row>
   <!--<ion-row>
     <ion-col class="display-flex pt-4">
       <div class="content-container border-right-gold">
@@ -378,7 +377,7 @@
               <ion-card-content class="regular-text">
                 {{ t('content.projects.project-2.description') }}
                 <ion-buttons slot="end" class="width-100 pt-1">
-                  <ion-button class="uppercase gold-button-border pr-0-5 pl-0-5 project-button">
+                  <ion-button class="uppercase gold-button-border pr-0-5 pl-0-5 project-button" (click)="openProjectDetails(2)">
                     {{ t('general.buttons.details') }}
                   </ion-button>
                 </ion-buttons>
@@ -408,7 +407,7 @@
               <ion-card-content class="regular-text">
                 {{ t('content.projects.project-3.description') }}
                 <ion-buttons slot="end" class="width-100 pt-1">
-                  <ion-button class="uppercase gold-button-border pr-0-5 pl-0-5 project-button">
+                  <ion-button class="uppercase gold-button-border pr-0-5 pl-0-5 project-button" (click)="openProjectDetails(3)">
                     {{ t('general.buttons.details') }}
                   </ion-button>
                 </ion-buttons>
@@ -441,7 +440,7 @@
     <ion-col class="display-flex justify-content-center align-items-center background-black pt-2 pb-4">
       <div class="content-container">
         <ion-buttons class="width-100">
-          <ion-button class="uppercase gold-button-border pr-0-5 pl-0-5 project-button black-button">
+          <ion-button class="uppercase gold-button-border pr-0-5 pl-0-5 project-button black-button" (click)="openEmploymentHistory()">
             {{ t('general.buttons.see-more') }}
           </ion-button>
         </ion-buttons>

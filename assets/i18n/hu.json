@@ -81,18 +81,45 @@
             "first": "Key member of the full-stack web development and testing team for an innovative administration system and webshop",
             "second": "Improving design, architecture and database construction while overseeing the entire software development lifecycle",
             "third": "Ensuring optimal functionality and seamless user experience to drive profitable sales"
-          }
+          },
+          "stack": "Angular, TypeScript, PrimeNG, HTML, CSS, Java, Spring Boot, MongoDb, Maven, XML, SOAP, Docker, AWS, Jira, Confluence, Git, Bitbucket"
         }
       },
       "project-2": {
         "title": "Cloud Storage and Synchronization Service",
         "date": "07/2022 - 12/2022",
-        "description": "Microservice development and migration of a cloud storage service for a prominent Swiss telecommunications and ICT service provider serving residential and business customers in Switzerland and Italy."
+        "description": "Microservice development and migration of a cloud storage service for a prominent Swiss telecommunications and ICT service provider serving residential and business customers in Switzerland and Italy.",
+        "detailed-description": {
+          "client": "Swiss telecommunications and ICT service provider",
+          "summary": {
+            "first": "Cross-platform cloud storage and synchronization service with features like automatic backup, serving 5k+ monthly new users in Switzerland.",
+            "second": "Backend team member in an agile (SCRUM) environment."
+          },
+          "tasks": {
+            "first": "Executed microservice development, migration and refactoring using the latest technologies",
+            "second": "Collaborated with Android and iOS teams ensuring fast and secure file management across multiple devices",
+            "third": "Facilitated efficient file processing for automatic backup and synchronization"
+          },
+          "stack": "Java, Reactive Java, Kotlin, MongoDb, Spring Boot, RabbitMQ, Elasticsearch, CloudFoundry, Docker, AWS, Kubernetes, Jenkins, Grafana, Kibana, Upsource, Git"
+        }
       },
       "project-3": {
         "title": "CAD Support and Administration System",
         "date": "01/2020 - 06/2022",
-        "description": "Full-stack web development and enhancement of an administration platform for a proprietary CAD program developed by an international client based in Germany provisioning lightning and surge protection solutions."
+        "description": "Full-stack web development and enhancement of an administration platform for a proprietary CAD program developed by an international client based in Germany provisioning lightning and surge protection solutions.",
+        "detailed-description": {
+          "client": "International lightning and surge protection provider based in Germany",
+          "summary": {
+            "first": "Web-based administration and file management tool for supporting the proprietary CAD program of the client, providing general drawing and project management features, as well as a secure background for the client's webshop.",
+            "second": ""
+          },
+          "tasks": {
+            "first": "Full-stack development of the administration tool in an agile (SCRUM) team",
+            "second": "Enhanced the existing system with nearly real-time communication through web sockets",
+            "third": "Cooperated with the CAD team to plan and implement an improved file management services using Test Driven Development"
+          },
+          "stack": "Angular, TypeScript, Angular Material, HTML, CSS, Java, Spring Boot, Azure, SQL, Maven, JUnit 5, SOAP, Web Sockets, Docker, Bamboo, Jira, Confluence, Git, GitHub, Bitbucket"
+        }
       }
     },
     "intro": {
@@ -105,7 +132,8 @@
   "modal": {
     "projects": {
       "details": "Details",
-      "responsibilities": "Key Responsibilities"
+      "responsibilities": "Key Responsibilities",
+      "stack": "Stack"
     }
   }
 }

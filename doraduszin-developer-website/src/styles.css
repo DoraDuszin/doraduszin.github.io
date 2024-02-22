@@ -624,7 +624,7 @@ ion-title {
 }
 
 ion-modal {
-  --height: 90%;
+  --height: 92%;
   --border-radius: 2rem;
   --position: fixed;
   position: fixed;
@@ -668,6 +668,10 @@ ion-modal ion-button {
 
 ion-button {
   -webkit-tap-highlight-color: transparent;
+}
+
+.close-button {
+  width: 27%;
 }
 
 /*ion-button.button-native {

@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {TranslocoService} from '@ngneat/transloco';
 import {ProjectDetailComponent} from './components/project-detail-component/project-detail-component.component';
 import {ModalController} from '@ionic/angular';
+import {EmploymentHistoryComponentComponent} from './components/employment-history-component/employment-history-component.component';
 
 @Component({
   selector: 'app-root',
@@ -48,12 +49,21 @@ export class AppComponent implements OnInit {
 
   async openProjectDetails(projectNumber: number): Promise<void> {
     this.scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-    console.log('scrollPosition: ', this.scrollPosition);
     const modal = await this.modalController.create({
       component: ProjectDetailComponent,
       componentProps: {
-        projectNumber: 1
+        projectNumber
       }
+    });
+    return await modal.present().then(() => {
+      window.scrollTo(0, this.scrollPosition);
+    });
+  }
+
+  async openEmploymentHistory(): Promise<void> {
+    this.scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+    const modal = await this.modalController.create({
+      component: EmploymentHistoryComponentComponent
     });
     return await modal.present().then(() => {
       window.scrollTo(0, this.scrollPosition);

@@ -136,7 +136,11 @@
       "stack": "Stack"
     },
     "history": {
-      "title": "Overview"
+      "title": "Overview",
+      "description": {
+        "section-1": "",
+        "section-1": ""
+      }
     }
   }
 }

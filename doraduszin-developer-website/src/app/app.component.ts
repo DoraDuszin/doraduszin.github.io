@@ -51,10 +51,13 @@ export class AppComponent implements OnInit {
     this.scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
     const modal = await this.modalController.create({
       component: ProjectDetailComponent,
+      /*cssClass: 'dynamic-height-modal',*/
       componentProps: {
         projectNumber
       }
     });
+
+    /*modal.style.setProperty('--height', dynamicHeight);*/
     return await modal.present().then(() => {
       window.scrollTo(0, this.scrollPosition);
     });

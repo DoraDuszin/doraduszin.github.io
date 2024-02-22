@@ -22,6 +22,7 @@ export class ProjectDetailComponent implements OnInit {
     third: ''
   };
   stack = '';
+  dynamicHeight = '';
 
   constructor(private modalController: ModalController,
               private translocoService: TranslocoService) {
@@ -49,9 +50,19 @@ export class ProjectDetailComponent implements OnInit {
       .subscribe(translation => {
         this.stack = translation;
       });
+    /*const dynamicHeight = this.calculateModalHeight();
+    this.dynamicHeight = dynamicHeight;
+    console.log('dynamicHeight', dynamicHeight);*/
   }
 
   close(): void {
     this.modalController.dismiss();
   }
+
+  /*calculateModalHeight(): string {
+    const contentElement = document.querySelector('.content') as HTMLElement;
+    const contentHeight = contentElement.scrollHeight;
+    /!*const modalElement = document.querySelector('.dynamic-height-modal') as HTMLElement;*!/
+    return Math.min(contentHeight + 40, window.innerHeight * 0.9) + 'px';
+  }*/
 }

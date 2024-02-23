@@ -134,6 +134,13 @@
       "details": "Details",
       "responsibilities": "Key Responsibilities",
       "stack": "Stack"
+    },
+    "history": {
+      "title": "Overview",
+      "description": {
+        "section-1": "",
+        "section-1": ""
+      }
     }
   }
 }

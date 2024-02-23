@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {TranslocoService} from '@ngneat/transloco';
 import {ProjectDetailComponent} from './components/project-detail-component/project-detail-component.component';
 import {ModalController} from '@ionic/angular';
@@ -10,6 +10,11 @@ import {EmploymentHistoryComponentComponent} from './components/employment-histo
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
+
+  @ViewChild('aboutSection') aboutSection: ElementRef;
+  @ViewChild('projectsSection') projectsSection: ElementRef;
+  @ViewChild('contactSection') contactSection: ElementRef;
+
   title = 'doraduszin-developer-website';
   selectedTab = 'about';
   selfIntroText = '';
@@ -32,6 +37,19 @@ export class AppComponent implements OnInit {
 
   tabChanged(tab: string): void {
     this.selectedTab = tab;
+    switch (tab) {
+      case 'about':
+        this.aboutSection.nativeElement.scrollIntoView({ behavior: 'smooth' });
+        break;
+      case 'projects':
+        this.projectsSection.nativeElement.scrollIntoView({ behavior: 'smooth' });
+        break;
+      case 'contact':
+        this.contactSection.nativeElement.scrollIntoView({ behavior: 'smooth' });
+        break;
+      default:
+        break;
+    }
   }
 
   toggleLanguages(): void {

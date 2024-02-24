@@ -27,6 +27,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     /*this.openProjectDetails(1);*/
+    this.openEmploymentHistory();
     setTimeout(() => {
       const typingAnimation = document.getElementById('typing-animation');
       if (typingAnimation) {

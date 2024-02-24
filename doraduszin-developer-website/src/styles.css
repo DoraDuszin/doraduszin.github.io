@@ -748,6 +748,40 @@ ion-button {
   z-index: 1000;
 }
 
+.modal-container {
+  margin: 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.client-text {
+  font-size: .8rem;
+  font-weight: 400;
+  text-transform: none;
+  color: var(--gold-color);
+}
+
+.date-text {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #737373;
+  /*text-transform: none;*/
+}
+
+.title {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: 600;
+}
+
 /*ion-button.button-native {
   padding: 0;
   background: white;

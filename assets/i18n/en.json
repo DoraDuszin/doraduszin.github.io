@@ -181,6 +181,42 @@
             "third": "Contributed to the full-stack development and maintenance of the program's website"
           },
           "stack": "C#, .Net, .Net Core, Azure"
+        },
+        "bcm": {
+          "name": "BCM Engineering Ltd.",
+          "role": "Software Developer",
+          "date": "08/2018 - 11/2018",
+          "summary": "BCM Engineering Ltd. is a Hungarian company offering unique software development and IT Operation on the regional and international market, serving clients from small-scale companies to multinational corporations.",
+          "tasks": {
+            "first": "Collaborated with an experienced team to create new web applications using test-driven development methodologies",
+            "second": "Full-stack development of corporate task management, administrative, and reporting systems, working closely with other cross-functional teams",
+            "third": "Contributed to the maintenance and refactoring of already existing software for the financial, telecommunication, and electric industries"
+          },
+          "stack": "C#, .Net, TypeScript, JavaScript, DevExpress (XAF, XPO)"
+        },
+        "ge": {
+          "name": "GE Healthcare",
+          "role": "Software Developer Intern",
+          "date": "05/2018 - 08/2018",
+          "summary": "GE Healthcare is a leading global provider of medical imaging, monitoring, biomanufacturing, and cell therapy technologies, collaborating with healthcare providers and partners worldwide to improve healthcare delivery and patient outcomes.",
+          "tasks": {
+            "first": "Backend development of a complex and innovative healthcare platform, focusing on refactoring legacy solutions to the latest technologies to ensure the delivery of high-quality software solutions",
+            "second": "Supported the other development teams to design and implement advanced features and functionalities for medical imaging",
+            "third": "Participated in sprint planning, daily stand-ups, and sprint reviews to contribute to effective communication and task prioritization"
+          },
+          "stack": "Java, C++, Bash, Maven, Ant, Docker"
+        },
+        "balinternet": {
+          "name": "Bálinternet Ltd.",
+          "role": "Full-Stack Developer",
+          "date": "03/2017 - 04/2018",
+          "summary": "Bálinternet Ltd. is a Hungarian unique software and web development company, focusing mainly on providing reliable solutions tailored for city councils and other public institutions.",
+          "tasks": {
+            "first": "Full-stack development of web-based applications, internal use software, websites, and portals tailored specifically for the Council of Törökbálint and other urban institutions",
+            "second": "Collaborated closely with stakeholders to identify requirements, design user-friendly interfaces and implement new functionalities for internal administration solutions",
+            "third": "Integrated OpenCMS to efficiently manage content and ensure a solid background for dynamic features enhancing user experience"
+          },
+          "stack": "Java, Spring, PostgreSQL, Maven, OpenCMS, HTML, CSS, JavaScript, Bootstrap"
         }
       }
     }

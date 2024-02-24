@@ -1,0 +1,19 @@
+.accordion-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.ion-item-no-padding {
+  --padding-start: 0;
+  --color: var(--gold-color);
+}
+
+.accordion-role {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--gold-color);
+}
+
+.item.sc-ion-label-md-h, .item .sc-ion-label-md-h {
+  color: var(--black-color);
+}

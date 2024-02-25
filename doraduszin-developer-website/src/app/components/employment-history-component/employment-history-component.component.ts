@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {IonicModule, ModalController} from '@ionic/angular';
+import {IonicModule, ModalController, Platform} from '@ionic/angular';
 import {TranslocoDirective, TranslocoService} from '@ngneat/transloco';
 
 @Component({
@@ -15,10 +15,13 @@ import {TranslocoDirective, TranslocoService} from '@ngneat/transloco';
 export class EmploymentHistoryComponentComponent implements OnInit {
 
   constructor(private modalController: ModalController,
-              private translocoService: TranslocoService) {
+              private platform: Platform) {
   }
 
   ngOnInit(): void {
+    this.platform.backButton.subscribeWithPriority(0, () => {
+      this.close();
+    });
   }
 
   close(): void {

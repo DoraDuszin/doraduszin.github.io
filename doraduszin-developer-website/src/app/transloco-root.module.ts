@@ -34,12 +34,4 @@ function determineDefaultLanguage(): string {
   } else {
     return 'en';
   }
-
-  /*const normalizedLang = browserLang.split('-')[0];*/
-
-  /*if (['en', 'es', 'hu'].includes(normalizedLang)) {
-    return normalizedLang;
-  } else {
-    return 'en';
-  }*/
 }

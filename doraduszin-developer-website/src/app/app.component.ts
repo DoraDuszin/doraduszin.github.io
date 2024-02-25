@@ -1,5 +1,5 @@
 import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
-import {getBrowserLang, TranslocoService} from '@ngneat/transloco';
+import {TranslocoService} from '@ngneat/transloco';
 import {ProjectDetailComponent} from './components/project-detail-component/project-detail-component.component';
 import {ModalController} from '@ionic/angular';
 import {EmploymentHistoryComponentComponent} from './components/employment-history-component/employment-history-component.component';
@@ -11,18 +11,15 @@ import {EmploymentHistoryComponentComponent} from './components/employment-histo
 })
 export class AppComponent implements OnInit {
 
-  /*@ViewChild('aboutSection') aboutSection: ElementRef;
+  @ViewChild('aboutSection') aboutSection: ElementRef;
   @ViewChild('projectsSection') projectsSection: ElementRef;
-  @ViewChild('contactSection') contactSection: ElementRef;*/
+  @ViewChild('contactSection') contactSection: ElementRef;
 
   title = 'doraduszin-developer-website';
   selectedTab = 'about';
   selfIntroText = '';
   showLanguages = false;
   scrollPosition = 0;
-  testText = '';
-  testText2 = '';
-  browserLang = '';
 
   constructor(private translocoService: TranslocoService,
               private modalController: ModalController) {
@@ -31,14 +28,6 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     /*this.openProjectDetails(1);*/
     /*this.openEmploymentHistory();*/
-    this.browserLang = getBrowserLang();
-    this.translocoService.selectTranslate('general.personal.details.name').subscribe(res => {
-      this.testText = res;
-    });
-    this.translocoService.selectTranslateObject('general.personal.details')
-      .subscribe(translation => {
-        this.testText2 = translation.name;
-      });
     setTimeout(() => {
       const typingAnimation = document.getElementById('typing-animation');
       if (typingAnimation) {
@@ -47,14 +36,8 @@ export class AppComponent implements OnInit {
     }, 2000);
   }
 
-  /*getTranslation(key: string): any {
-    this.translocoService.selectTranslate('general.personal.details.name').subscribe(res => {
-      return res;
-    });
-  }*/
-
   tabChanged(tab: string): void {
-    /*this.selectedTab = tab;
+    this.selectedTab = tab;
     switch (tab) {
       case 'about':
         this.aboutSection.nativeElement.scrollIntoView({ behavior: 'smooth' });
@@ -67,7 +50,7 @@ export class AppComponent implements OnInit {
         break;
       default:
         break;
-    }*/
+    }
   }
 
   toggleLanguages(): void {
@@ -87,13 +70,11 @@ export class AppComponent implements OnInit {
     this.scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
     const modal = await this.modalController.create({
       component: ProjectDetailComponent,
-      /*cssClass: 'dynamic-height-modal',*/
       componentProps: {
         projectNumber
       }
     });
 
-    /*modal.style.setProperty('--height', dynamicHeight);*/
     return await modal.present().then(() => {
       window.scrollTo(0, this.scrollPosition);
     });

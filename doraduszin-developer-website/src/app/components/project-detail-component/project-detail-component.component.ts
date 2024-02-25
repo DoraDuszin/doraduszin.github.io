@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {ModalController} from '@ionic/angular';
+import {ModalController, Platform} from '@ionic/angular';
 import {TranslocoService} from '@ngneat/transloco';
 
 @Component({
@@ -25,11 +25,14 @@ export class ProjectDetailComponent implements OnInit {
   dynamicHeight = '';
 
   constructor(private modalController: ModalController,
-              private translocoService: TranslocoService) {
+              private translocoService: TranslocoService,
+              private platform: Platform) {
   }
 
   ngOnInit(): void {
-    console.log('projectNumber: ', this.projectNumber);
+    this.platform.backButton.subscribeWithPriority(0, () => {
+      this.close();
+    });
     this.translocoService.selectTranslateObject('content.projects.project-' + this.projectNumber)
       .subscribe(translation => {
       this.projectName = translation.title;

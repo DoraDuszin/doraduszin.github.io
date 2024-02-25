@@ -170,18 +170,6 @@
           },
           "stack": "Java SE & EE, Maven, Spring, Judo, Docker, PostgreSQL, Hibernate"
         },
-        "microsoft": {
-          "name": "Microsoft Hungary",
-          "role": "Microsoft Student Partner",
-          "date": "09/2017 - 04/2020",
-          "summary": "I am proud to highlight my Student Partnership at Microsoft Hungary, a cherished chapter in my life, where I had the opportunity to be part of a global group of on-campus ambassadors as a member of the software development team.",
-          "tasks": {
-            "first": "Actively engaged with fellow students and faculties to promote Microsoft technologies and initiatives within the academic community, organizing events, workshops, and seminars to enhance technological literacy and foster collaboration",
-            "second": "Key member and MSP of the year of the development group, focused on the development of various .NET-oriented applications for internal use while providing assistance to Microsoft employees across different fields",
-            "third": "Contributed to the full-stack development and maintenance of the program's website"
-          },
-          "stack": "C#, .Net, .Net Core, Azure"
-        },
         "bcm": {
           "name": "BCM Engineering Ltd.",
           "role": "Software Developer",
@@ -218,6 +206,37 @@
           },
           "stack": "Java, Spring, PostgreSQL, Maven, OpenCMS, HTML, CSS, JavaScript, Bootstrap"
         }
+      },
+      "non-profit": {
+        "title": "Non-Profit and Partnership",
+        "cloudess": {
+          "name": "Cloudess",
+          "role": "Lead Software Developer, CTO",
+          "date": "10/2017 - 04/2020",
+          "summary": "I co-founded a non-profit organization called Cloudess with two friends I met during my time as a Microsoft Student Partner, aimed at empowering women pursuing careers in STEM fields. As a key motivation for starting my freelance career, I endeavored to integrate my personal brand with the organization's mission, which unfortunately ceased operations due to the challenges posed by the COVID-19 pandemic and my relocation abroad.",
+          "summary-2": "Despite this, I'm proud to have formed part of this experience, during our operational years we successfully built a supportive community, organized events and workshops at esteemed venues such as Accenture and Microsoft, participated in startup competitions and collaborated with various professionals in tech and social media sectors to amplify our message.",
+          "tasks": {
+            "first": "Provided the technological infrastructure as CTO and lead developer, overseeing the creation and maintenance of essential platforms such as the organization's website, forums, and event management systems",
+            "second": "Played a pivotal role in the event planning and execution, leveraging technical expertise to provide the necessary tech background for workshops and seminars",
+            "third": "Demonstrated leadership and mentorship by providing talks and presentations for younger audiences and fellow university students, inspiring and empowering the next generation of tech enthusiasts while actively building a supportive community"
+          },
+          "stack": "C#, .Net Core, Azure, JavaScript, CSS, HTML, Bootstrap"
+        },
+        "microsoft": {
+          "name": "Microsoft Hungary",
+          "role": "Microsoft Student Partner",
+          "date": "09/2017 - 04/2020",
+          "summary": "I am proud to highlight my Student Partnership at Microsoft Hungary, a cherished chapter in my life, where I had the opportunity to be part of a global group of on-campus ambassadors as a member of the software development team.",
+          "tasks": {
+            "first": "Actively engaged with fellow students and faculties to promote Microsoft technologies and initiatives within the academic community, organizing events, workshops, and seminars to enhance technological literacy and foster collaboration",
+            "second": "Key member and MSP of the year of the development group, focused on the development of various .NET-oriented applications for internal use while providing assistance to Microsoft employees across different fields",
+            "third": "Contributed to the full-stack development and maintenance of the program's website"
+          },
+          "stack": "C#, .Net, .Net Core, Azure"
+        }
+      },
+      "education": {
+        "title": "Education"
       }
     }
   }

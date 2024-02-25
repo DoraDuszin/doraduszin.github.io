@@ -13,8 +13,8 @@ import {environment} from '../environments/environment';
       provideTransloco({
         config: {
           availableLangs: ['en', 'es', 'hu'],
-          /*defaultLang: getBrowserLang(),*/
-          defaultLang: 'en',
+          defaultLang: determineDefaultLanguage(),
+          /*defaultLang: 'en',*/
           reRenderOnLangChange: true,
           prodMode: environment.production,
         },
@@ -22,4 +22,16 @@ import {environment} from '../environments/environment';
       }),
   ],
 })
-export class TranslocoRootModule {}
+export class TranslocoRootModule {
+}
+
+function determineDefaultLanguage(): string {
+  const browserLang = getBrowserLang();
+  const normalizedLang = browserLang.split('-')[0];
+
+  if (['en', 'es', 'hu'].includes(normalizedLang)) {
+    return normalizedLang;
+  } else {
+    return 'en';
+  }
+}

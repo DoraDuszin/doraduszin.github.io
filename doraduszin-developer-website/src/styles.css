@@ -813,20 +813,20 @@ ion-card-header+.card-content-md {
   padding: 1rem 3rem 2rem 3rem;
 }*/
 
-@keyframes typingDots {
+/*@keyframes typingDots {
   0% { content: '.'; }
   50% { content: '..'; }
   75% { content: '...'; }
   100% { content: ''; }
-}
+}*/
 
-#typing-dots::after {
+/*#typing-dots::after {
   content: '';
   animation: typingDots 2.5s steps(4) infinite;
   white-space: nowrap;
-}
+}*/
 
-@keyframes floatAnimation {
+/*@keyframes floatAnimation {
   0% {
     transform: translate(0%, 0);
   }
@@ -843,9 +843,9 @@ ion-card-header+.card-content-md {
 
 .floating {
   animation: floatAnimation 12s ease-in-out infinite;
-}
+}*/
 
-@keyframes pushAnimation {
+/*@keyframes pushAnimation {
   0% {
     transform: translateX(0);
   }
@@ -862,9 +862,9 @@ ion-card-header+.card-content-md {
 
 .pushing {
   animation: pushAnimation 12s ease-in-out infinite;
-}
+}*/
 
-@keyframes upDownAnimation {
+/*@keyframes upDownAnimation {
   0% {
     transform: translateY(0);
   }
@@ -881,9 +881,9 @@ ion-card-header+.card-content-md {
 
 .upDown {
   animation: upDownAnimation 12s ease-in-out infinite;
-}
+}*/
 
-.typing-animation {
+/*.typing-animation {
   overflow: hidden;
   white-space: nowrap;
   border-right: 0.1rem var(--gold-color) solid;
@@ -897,9 +897,9 @@ ion-card-header+.card-content-md {
   to {
     width: 110%;
   }
-}
+}*/
 
-.typing-animation::before {
+/*.typing-animation::before {
   content: '';
   display: inline-block;
   vertical-align: bottom;
@@ -916,7 +916,7 @@ ion-card-header+.card-content-md {
   to {
     background-color: transparent;
   }
-}
+}*/
 
 #hello-world-animated {
   display: flex;

@@ -13,7 +13,8 @@ import {environment} from '../environments/environment';
       provideTransloco({
         config: {
           availableLangs: ['en', 'es', 'hu'],
-          defaultLang: getBrowserLang(),
+          /*defaultLang: getBrowserLang(),*/
+          defaultLang: 'en',
           reRenderOnLangChange: true,
           prodMode: environment.production,
         },

@@ -1,3 +1,4 @@
+/*
 module.exports = {
   rootTranslationsPath: 'src/assets/i18n/',
   langs: ['en', 'es', 'hu'],
@@ -6,3 +7,4 @@ module.exports = {
     defaultLang: 'en',
   },
 };
+*/

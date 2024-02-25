@@ -74,11 +74,11 @@
         "detailed-description": {
           "client": "Swiss cable & satellite provider",
           "summary": {
-            "first": "Webshop for ordering network, IT- and cloud service-related products, services, and bundles tailored for both residential and business users.",
+            "first": "Webshop for ordering network, IT- and cloud service-related products, services and bundles, tailored for both residential and business users.",
             "second": "Web-based administration platform utilized by the client's employees and dedicated admin users for managing internal processes, offers, and more."
           },
           "tasks": {
-            "first": "Key member of the full-stack web development and testing team for an innovative administration system and webshop",
+            "first": "Full-stack web development and testing for an innovative administration system and webshop",
             "second": "Improving design, architecture and database construction while overseeing the entire software development lifecycle",
             "third": "Ensuring optimal functionality and seamless user experience to drive profitable sales"
           },
@@ -116,7 +116,7 @@
           "tasks": {
             "first": "Full-stack development of the administration tool in an agile (SCRUM) team",
             "second": "Enhanced the existing system with nearly real-time communication through web sockets",
-            "third": "Cooperated with the CAD team to plan and implement an improved file management services using Test Driven Development"
+            "third": "Cooperated with the CAD team to plan and implement an improved file management service using Test Driven Development"
           },
           "stack": "Angular, TypeScript, Angular Material, HTML, CSS, Java, Spring Boot, Azure, SQL, Maven, JUnit 5, SOAP, Web Sockets, Docker, Bamboo, Jira, Confluence, Git, GitHub, Bitbucket"
         }
@@ -126,7 +126,9 @@
       "title": "continue;"
     },
     "contact": {
-      "section-1": "If you're interested in getting to know more about how we can collaborate, contact me below!"
+      "section-1": "Outside of my professional pursuits, I enjoy immersing myself in continuous learning, whether it's exploring new hobbies like video editing or diving into a new sport or language. I'm truly passionate about innovation and exploring unconventional ideas.",
+      "section-2": "Thank you for visiting my website, I hope you liked it! As it is a constant work in progress, your feedback is greatly appreciated.",
+      "section-3": "If you're interested in getting to know more about how we can collaborate, contact me below!"
     }
   },
   "modal": {
@@ -146,7 +148,7 @@
             "part-2": "React, Node.js/Express.js, MongoDB, Docker, HTML, and CSS."
           },
           "summary-2": {
-            "part-1": "Implemented a web-based administrative platform for a Hungarian client's mobile application, aimed at connecting families with kids, using ",
+            "part-1": "Implemented a web-based administrative platform for a Hungarian client's mobile application, aimed at connecting families and organizing events for kids, using ",
             "part-2": "C#, Azure, .Net Core, MSSQL, JavaScript, CSS, HTML and Bootstrap."
           },
           "summary-3": {
@@ -236,7 +238,26 @@
         }
       },
       "education": {
-        "title": "Education"
+        "title": "Education",
+        "bsc": "BSc Computer Engineering",
+        "ongoing": "Ongoing studies",
+        "summary": "I have ongoing studies in Computer Engineering with a specialization in Embedded Systems, IoT & Robotics which I initiated in Hungary, successfully completing the majority of my coursework. However, due to personal and professional commitments, I decided to pause my studies and relocate to Spain.",
+        "summary-2": "After spending a year at the Technical University of Valencia, I transitioned to completing the remaining subjects remotely as it better suits my current goals and lifestyle.",
+        "uned": {
+          "name": "UNED",
+          "date": "09/2023 - Present",
+          "location": "Spain, remote"
+        },
+        "upv": {
+          "name": "Technical University of Valencia",
+          "date": "09/2022 - 09/2023",
+          "location": "Spain"
+        },
+        "oe": {
+          "name": "Óbuda University",
+          "date": "09/2015 – 09/2021",
+          "location": "Hungary"
+        }
       }
     }
   }

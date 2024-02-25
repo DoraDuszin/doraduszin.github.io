@@ -17,3 +17,7 @@
 .item.sc-ion-label-md-h, .item .sc-ion-label-md-h {
   color: var(--black-color);
 }
+
+.rotated {
+  transform: rotate(180deg);
+}

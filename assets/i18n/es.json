@@ -25,12 +25,12 @@
     }
   },
   "header": {
-    "about": "Sobre Mí",
-    "projects": "Proyectos",
-    "projects-latest": "Proyectos Recientes",
-    "services": "Servicios",
-    "contact": "Contacto",
-    "experience-services": "Experiencia y Servicios"
+    "about": "About",
+    "projects": "Projects",
+    "projects-latest": "Latest Projects",
+    "services": "Services",
+    "contact": "Contact",
+    "experience-services": "Experience and Services"
   },
   "content": {
     "about": {
@@ -74,11 +74,11 @@
         "detailed-description": {
           "client": "Swiss cable & satellite provider",
           "summary": {
-            "first": "Webshop for ordering network, IT- and cloud service-related products, services, and bundles tailored for both residential and business users.",
+            "first": "Webshop for ordering network, IT- and cloud service-related products, services and bundles, tailored for both residential and business users.",
             "second": "Web-based administration platform utilized by the client's employees and dedicated admin users for managing internal processes, offers, and more."
           },
           "tasks": {
-            "first": "Key member of the full-stack web development and testing team for an innovative administration system and webshop",
+            "first": "Full-stack web development and testing for an innovative administration system and webshop",
             "second": "Improving design, architecture and database construction while overseeing the entire software development lifecycle",
             "third": "Ensuring optimal functionality and seamless user experience to drive profitable sales"
           },
@@ -116,7 +116,7 @@
           "tasks": {
             "first": "Full-stack development of the administration tool in an agile (SCRUM) team",
             "second": "Enhanced the existing system with nearly real-time communication through web sockets",
-            "third": "Cooperated with the CAD team to plan and implement an improved file management services using Test Driven Development"
+            "third": "Cooperated with the CAD team to plan and implement an improved file management service using Test Driven Development"
           },
           "stack": "Angular, TypeScript, Angular Material, HTML, CSS, Java, Spring Boot, Azure, SQL, Maven, JUnit 5, SOAP, Web Sockets, Docker, Bamboo, Jira, Confluence, Git, GitHub, Bitbucket"
         }
@@ -126,7 +126,9 @@
       "title": "continue;"
     },
     "contact": {
-      "section-1": "If you're interested in getting to know more about how we can collaborate, contact me below!"
+      "section-1": "Outside of my professional pursuits, I enjoy immersing myself in continuous learning, whether it's exploring new hobbies like video editing or diving into a new sport or language. I'm truly passionate about innovation and exploring unconventional ideas.",
+      "section-2": "Thank you for visiting my website, I hope you liked it! As it is a constant work in progress, your feedback is greatly appreciated.",
+      "section-3": "If you're interested in getting to know more about how we can collaborate, contact me below!"
     }
   },
   "modal": {
@@ -146,7 +148,7 @@
             "part-2": "React, Node.js/Express.js, MongoDB, Docker, HTML, and CSS."
           },
           "summary-2": {
-            "part-1": "Implemented a web-based administrative platform for a Hungarian client's mobile application, aimed at connecting families with kids, using ",
+            "part-1": "Implemented a web-based administrative platform for a Hungarian client's mobile application, aimed at connecting families and organizing events for kids, using ",
             "part-2": "C#, Azure, .Net Core, MSSQL, JavaScript, CSS, HTML and Bootstrap."
           },
           "summary-3": {
@@ -169,18 +171,6 @@
             "third": "Received mentorship from a senior developer and worked closely with the frontend team, gaining valuable insights and guidance while actively contributing to the team's projects"
           },
           "stack": "Java SE & EE, Maven, Spring, Judo, Docker, PostgreSQL, Hibernate"
-        },
-        "microsoft": {
-          "name": "Microsoft Hungary",
-          "role": "Microsoft Student Partner",
-          "date": "09/2017 - 04/2020",
-          "summary": "I am proud to highlight my Student Partnership at Microsoft Hungary, a cherished chapter in my life, where I had the opportunity to be part of a global group of on-campus ambassadors as a member of the software development team.",
-          "tasks": {
-            "first": "Actively engaged with fellow students and faculties to promote Microsoft technologies and initiatives within the academic community, organizing events, workshops, and seminars to enhance technological literacy and foster collaboration",
-            "second": "Key member and MSP of the year of the development group, focused on the development of various .NET-oriented applications for internal use while providing assistance to Microsoft employees across different fields",
-            "third": "Contributed to the full-stack development and maintenance of the program's website"
-          },
-          "stack": "C#, .Net, .Net Core, Azure"
         },
         "bcm": {
           "name": "BCM Engineering Ltd.",
@@ -217,6 +207,56 @@
             "third": "Integrated OpenCMS to efficiently manage content and ensure a solid background for dynamic features enhancing user experience"
           },
           "stack": "Java, Spring, PostgreSQL, Maven, OpenCMS, HTML, CSS, JavaScript, Bootstrap"
+        }
+      },
+      "non-profit": {
+        "title": "Non-Profit and Partnership",
+        "cloudess": {
+          "name": "Cloudess",
+          "role": "Lead Software Developer, CTO",
+          "date": "10/2017 - 04/2020",
+          "summary": "I co-founded a non-profit organization called Cloudess with two friends I met during my time as a Microsoft Student Partner, aimed at empowering women pursuing careers in STEM fields. As a key motivation for starting my freelance career, I endeavored to integrate my personal brand with the organization's mission, which unfortunately ceased operations due to the challenges posed by the COVID-19 pandemic and my relocation abroad.",
+          "summary-2": "Despite this, I'm proud to have formed part of this experience, during our operational years we successfully built a supportive community, organized events and workshops at esteemed venues such as Accenture and Microsoft, participated in startup competitions and collaborated with various professionals in tech and social media sectors to amplify our message.",
+          "tasks": {
+            "first": "Provided the technological infrastructure as CTO and lead developer, overseeing the creation and maintenance of essential platforms such as the organization's website, forums, and event management systems",
+            "second": "Played a pivotal role in the event planning and execution, leveraging technical expertise to provide the necessary tech background for workshops and seminars",
+            "third": "Demonstrated leadership and mentorship by providing talks and presentations for younger audiences and fellow university students, inspiring and empowering the next generation of tech enthusiasts while actively building a supportive community"
+          },
+          "stack": "C#, .Net Core, Azure, JavaScript, CSS, HTML, Bootstrap"
+        },
+        "microsoft": {
+          "name": "Microsoft Hungary",
+          "role": "Microsoft Student Partner",
+          "date": "09/2017 - 04/2020",
+          "summary": "I am proud to highlight my Student Partnership at Microsoft Hungary, a cherished chapter in my life, where I had the opportunity to be part of a global group of on-campus ambassadors as a member of the software development team.",
+          "tasks": {
+            "first": "Actively engaged with fellow students and faculties to promote Microsoft technologies and initiatives within the academic community, organizing events, workshops, and seminars to enhance technological literacy and foster collaboration",
+            "second": "Key member and MSP of the year of the development group, focused on the development of various .NET-oriented applications for internal use while providing assistance to Microsoft employees across different fields",
+            "third": "Contributed to the full-stack development and maintenance of the program's website"
+          },
+          "stack": "C#, .Net, .Net Core, Azure"
+        }
+      },
+      "education": {
+        "title": "Education",
+        "bsc": "BSc Computer Engineering",
+        "ongoing": "Ongoing studies",
+        "summary": "I have ongoing studies in Computer Engineering with a specialization in Embedded Systems, IoT & Robotics which I initiated in Hungary, successfully completing the majority of my coursework. However, due to personal and professional commitments, I decided to pause my studies and relocate to Spain.",
+        "summary-2": "After spending a year at the Technical University of Valencia, I transitioned to completing the remaining subjects remotely as it better suits my current goals and lifestyle.",
+        "uned": {
+          "name": "UNED",
+          "date": "09/2023 - Present",
+          "location": "Spain, remote"
+        },
+        "upv": {
+          "name": "Technical University of Valencia",
+          "date": "09/2022 - 09/2023",
+          "location": "Spain"
+        },
+        "oe": {
+          "name": "Óbuda University",
+          "date": "09/2015 – 09/2021",
+          "location": "Hungary"
         }
       }
     }

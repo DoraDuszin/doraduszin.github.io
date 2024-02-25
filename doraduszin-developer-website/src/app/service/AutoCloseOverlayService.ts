@@ -11,9 +11,6 @@ export class AutocloseOverlaysService {
   }
 
   async trigger() {
-    console.log('backbutton triggered');
-
-    // close modal
     try {
       const element = await this.modalCtrl.getTop();
       if (element) {

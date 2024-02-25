@@ -1,11 +1,11 @@
 <ion-grid *transloco="let t">
-  <div #aboutSection>
+  <div #aboutSection id="aboutSection" inViewport (inViewportAction)="handleInViewport($event)">
     <ion-row>
       <ion-col>
         <ion-header>
           <ion-toolbar class="pr-1-5">
             <ion-title class="pl-1-5">{{ t('general.personal.details.name') }}</ion-title>
-            <ion-buttons slot="end" class="pr-0-5" [ngClass]="{'gold-button-border': showLanguages}">
+            <!--<ion-buttons slot="end" class="pr-0-5" [ngClass]="{'gold-button-border': showLanguages}">
               <ion-button *ngIf="showLangButton('en')" class="width-10 language-button" (click)="changeLanguage('en')">
                 {{ t('general.languages.en') }}
               </ion-button>
@@ -18,7 +18,7 @@
               <ion-button class="width-10 language-button m-0" (click)="toggleLanguages()">
                 <img class="image-100" src="assets/icons/white_globe.svg">
               </ion-button>
-            </ion-buttons>
+            </ion-buttons>-->
           </ion-toolbar>
         </ion-header>
       </ion-col>
@@ -87,7 +87,7 @@
       </div>
     </ion-col>
   </ion-row>
-  <ion-row class="pb-2">
+  <ion-row class="">
     <ion-col class="display-flex">
       <div class="content-container">
         <ion-label class="text-normal">
@@ -150,7 +150,7 @@
       </div>
     </ion-card>
   </ion-row>
-  <ion-row class="pt-2 pb-2">
+  <ion-row class="">
     <ion-col class="display-flex">
       <div class="content-container">
         <ion-label class="text-normal">
@@ -165,8 +165,8 @@
         <ion-col class="display-flex align-items-center">
           <ion-label class="display-flex width-80">
             <!--<div class="skills-characters"><</div>-->
-            <div class="color-gold skills-characters">\</div>
-            <div class="skills-characters">></div>
+            <div class="color-gold skills-characters"><</div>
+            <div class="skills-characters">/</div>
             <div class="secondary-header align-items-center">&nbsp;{{ t('general.frontend') }}</div>
           </ion-label>
           <div class="display-flex justify-content-end width-20">
@@ -263,7 +263,7 @@
       </div>
     </ion-col>
   </ion-row>-->
-  <ion-row class="pt-4">
+  <ion-row class="pt-2">
     <ion-col class="display-flex">
       <div class="content-container">
         <ion-label class="text-normal">
@@ -272,7 +272,7 @@
       </div>
     </ion-col>
   </ion-row>
-  <ion-row class="pt-1">
+  <ion-row class="pt-1 pb-1">
     <ion-col class="display-flex">
       <div class="content-container">
         <ion-label class="text-normal">
@@ -281,29 +281,7 @@
       </div>
     </ion-col>
   </ion-row>
-  <!--<ion-row>
-    <ion-col class="display-flex pt-4">
-      <div class="content-container border-right-gold">
-        <div class="section-left text-align-end">
-          <ion-label class="text-normal">
-            {{ t('content.about.section-4') }}
-          </ion-label>
-        </div>
-      </div>
-    </ion-col>
-  </ion-row>
-  <ion-row class="pb-4">
-    <ion-col class="display-flex">
-      <div class="content-container border-right-gold">
-        <div class="section-left-pb-0 text-align-end">
-          <ion-label class="text-normal">
-            {{ t('content.about.section-5') }}
-          </ion-label>
-        </div>
-      </div>
-    </ion-col>
-  </ion-row>-->
-  <div #projectsSection>
+  <div #projectsSection id="projectsSection" inViewport (inViewportAction)="handleInViewport($event)">
     <ion-row class="pt-2">
       <ion-col class="display-flex background-black">
         <div class="content-container section-title">
@@ -314,7 +292,7 @@
       </ion-col>
     </ion-row>
     <ion-row>
-      <ion-col class="display-flex background-black pt-1">
+      <ion-col class="display-flex background-black">
         <div class="content-container">
           <ion-label class="text-normal text-white">
             {{ t('content.projects.description-1') }}
@@ -323,7 +301,7 @@
       </ion-col>
     </ion-row>
     <ion-row>
-      <ion-col class="display-flex background-black pt-1 pb-4">
+      <ion-col class="display-flex background-black pt-1 pb-2">
         <div class="content-container">
           <ion-label class="text-normal text-white">
             {{ t('content.projects.description-2') }}
@@ -422,7 +400,7 @@
       </ion-card>
     </ion-row>
     <ion-row>
-      <ion-col class="display-flex background-black pt-1">
+      <ion-col class="display-flex background-black">
         <div class="content-container">
           <ion-label class="text-normal text-white">
             {{ t('content.projects.description-3') }}
@@ -451,7 +429,7 @@
       </ion-col>
     </ion-row>
   </div>
-  <div #contactSection>
+  <div #contactSection id="contactSection" inViewport (inViewportAction)="handleInViewport($event)">
     <ion-row>
       <ion-col class="display-flex">
         <div class="content-container welcome-container">
@@ -472,7 +450,38 @@
       </ion-col>
       <!--</div>-->
     </ion-row>
+
+
+    <ion-row class="pt-1">
+      <ion-col class="display-flex">
+        <div class="content-container">
+          <ion-label class="text-normal">
+            {{ t('content.contact.section-1') }}
+          </ion-label>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row class="pt-1 pb-2">
+      <ion-col class="display-flex">
+        <div class="content-container">
+          <ion-label class="text-normal">
+            {{ t('content.contact.section-2') }}
+          </ion-label>
+        </div>
+      </ion-col>
+    </ion-row>
     <ion-row class="pb-4">
+      <ion-col class="display-flex">
+        <div class="content-container border-right-gold">
+          <div class="section-left-pb-0 text-align-end">
+            <ion-label class="text-normal">
+              {{ t('content.contact.section-3') }}
+            </ion-label>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+    <!--<ion-row class="pb-4">
       <ion-col class="display-flex">
         <div class="content-container border-left-gold">
           <div class="section-pb-0">
@@ -482,7 +491,7 @@
           </div>
         </div>
       </ion-col>
-    </ion-row>
+    </ion-row>-->
     <ion-footer>
       <ion-toolbar>
         <ion-row>
@@ -505,98 +514,5 @@
       </ion-toolbar>
     </ion-footer>
   </div>
-
-  <!--<ion-row>
-    <ion-col class="display-flex background-black">
-      <div class="content-container">
-        <div class="section">
-          <ion-label class="text-white text-normal">
-            ASD
-          </ion-label>
-        </div>
-      </div>
-    </ion-col>
-  </ion-row>-->
-  <!--<ion-row>
-    <ion-col>
-      <img class="image" src="assets/images/cat2.jpg">
-    </ion-col>
-  </ion-row>-->
-  <!--<ion-row>
-    <div class="separator"></div>
-  </ion-row>
-  <ion-row>
-    <ion-col class="display-flex">
-      <div class="content-container">
-        <div class="title">
-          <ion-label class="header-text">{{ t('header.about') }}</ion-label>
-        </div>
-      </div>
-    </ion-col>
-  </ion-row>
-  <ion-row>
-    <ion-col class="display-flex">
-      <div class="content-container">
-        <div class="section">
-          {{ t('content.about.welcome') }}
-        </div>
-        <div class="section">
-          {{ t('content.about.description') }}
-        </div>
-      </div>
-    </ion-col>
-  </ion-row>
-  <ion-row>
-    <div class="separator"></div>
-  </ion-row>
-  <ion-row>
-    <ion-col class="display-flex justify-content-center">
-      <ion-label class="header-text">{{ t('header.portfolio') }}</ion-label>
-    </ion-col>
-  </ion-row>
-  <div class="content-container">
-    <ion-card>
-      <img src="assets/images/cat3.jpg" class="image"/>
-      <ion-card-header>
-        <ion-card-title>Project XY</ion-card-title>
-        <ion-card-subtitle>Lorem ipsum</ion-card-subtitle>
-      </ion-card-header>
-      <ion-card-content>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </ion-card-content>
-    </ion-card>
-  </div>
-  <div class="content-container">
-    <ion-card>
-      <img src="assets/images/cat3.jpg" class="image"/>
-      <ion-card-header>
-        <ion-card-title>Project XY</ion-card-title>
-        <ion-card-subtitle>Lorem ipsum</ion-card-subtitle>
-      </ion-card-header>
-      <ion-card-content>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </ion-card-content>
-    </ion-card>
-  </div>
-  <div class="content-container">
-    <ion-card>
-      <img src="assets/images/cat3.jpg" class="image"/>
-      <ion-card-header>
-        <ion-card-title>Project XY</ion-card-title>
-        <ion-card-subtitle>Lorem ipsum</ion-card-subtitle>
-      </ion-card-header>
-      <ion-card-content>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </ion-card-content>
-    </ion-card>
-  </div>-->
-
-  <!--<ion-row>
-    <ion-col class="display-flex justify-content-center">
-      <div class="content-container">
-
-      </div>
-    </ion-col>
-  </ion-row>-->
 </ion-grid>
 

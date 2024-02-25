@@ -10,6 +10,7 @@ import { TranslocoRootModule } from './transloco-root.module';
 import {CommonModule} from '@angular/common';
 import {ProjectDetailComponent} from './components/project-detail-component/project-detail-component.component';
 import {AutocloseOverlaysService} from './service/AutoCloseOverlayService';
+import { InViewportModule } from 'ng-in-viewport';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import {AutocloseOverlaysService} from './service/AutoCloseOverlayService';
   ],
   imports: [
     BrowserModule,
+    InViewportModule,
     AppRoutingModule,
     TranslocoRootModule,
     CommonModule,

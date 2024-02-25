@@ -1,6 +1,6 @@
 <ion-content>
   <div *transloco="let t" class="modal-scrollable">
-    <ion-toolbar class="modal-toolbar">
+    <ion-toolbar class="modal-toolbar sticky-header">
       <ion-title class="modal-title">{{ t('modal.history.title') }}</ion-title>
       <ion-buttons slot="end">
         <ion-button class="close-button" (click)="close()">
@@ -47,8 +47,9 @@
       <ion-label class="secondary-header pt-2 popup-title">{{ t('modal.history.employment.title') }}</ion-label>
       <ion-accordion-group class="pt-1">
         <ion-accordion value="first">
-          <ion-item slot="header" color="light" class="ion-item-no-padding">
-            <ion-label class="">{{ t('modal.history.employment.blackbelt.name') }}</ion-label>
+          <ion-item slot="header" color="light" class="ion-item-no-padding" (click)="toggleAccordion('first', 1)">
+            <ion-label>{{ t('modal.history.employment.blackbelt.name') }}</ion-label>
+            <ion-icon class="ion-accordion-toggle-icon" src="assets/icons/ionic/chevron-down-outline.svg" [class.rotated]="isAccordionOpen('first', 1)"></ion-icon>
           </ion-item>
           <div class="accordion-content" slot="content">
             <ion-label class="accordion-role">{{ t('modal.history.employment.blackbelt.role') }}</ion-label>
@@ -73,8 +74,9 @@
           </div>
         </ion-accordion>
         <ion-accordion value="second">
-          <ion-item slot="header" color="light" class="ion-item-no-padding">
-            <ion-label class="client-text">{{ t('modal.history.employment.bcm.name') }}</ion-label>
+          <ion-item slot="header" color="light" class="ion-item-no-padding" (click)="toggleAccordion('second', 1)">
+            <ion-label>{{ t('modal.history.employment.bcm.name') }}</ion-label>
+            <ion-icon class="ion-accordion-toggle-icon" src="assets/icons/ionic/chevron-down-outline.svg" [class.rotated]="isAccordionOpen('second', 1)"></ion-icon>
           </ion-item>
           <div class="accordion-content" slot="content">
             <ion-label class="accordion-role">{{ t('modal.history.employment.bcm.role') }}</ion-label>
@@ -99,8 +101,9 @@
           </div>
         </ion-accordion>
         <ion-accordion value="third">
-          <ion-item slot="header" color="light" class="ion-item-no-padding">
-            <ion-label class="client-text">{{ t('modal.history.employment.ge.name') }}</ion-label>
+          <ion-item slot="header" color="light" class="ion-item-no-padding" (click)="toggleAccordion('third', 1)">
+            <ion-label>{{ t('modal.history.employment.ge.name') }}</ion-label>
+            <ion-icon class="ion-accordion-toggle-icon" src="assets/icons/ionic/chevron-down-outline.svg" [class.rotated]="isAccordionOpen('third', 1)"></ion-icon>
           </ion-item>
           <div class="accordion-content" slot="content">
             <ion-label class="accordion-role">{{ t('modal.history.employment.ge.role') }}</ion-label>
@@ -125,8 +128,9 @@
           </div>
         </ion-accordion>
         <ion-accordion value="fourth">
-          <ion-item slot="header" color="light" class="ion-item-no-padding">
-            <ion-label class="client-text">{{ t('modal.history.employment.balinternet.name') }}</ion-label>
+          <ion-item slot="header" color="light" class="ion-item-no-padding" (click)="toggleAccordion('fourth', 1)">
+            <ion-label>{{ t('modal.history.employment.balinternet.name') }}</ion-label>
+            <ion-icon class="ion-accordion-toggle-icon" src="assets/icons/ionic/chevron-down-outline.svg" [class.rotated]="isAccordionOpen('fourth', 1)"></ion-icon>
           </ion-item>
           <div class="accordion-content" slot="content">
             <ion-label class="accordion-role">{{ t('modal.history.employment.balinternet.role') }}</ion-label>
@@ -160,8 +164,9 @@
       <ion-label class="secondary-header pt-2 popup-title">{{ t('modal.history.non-profit.title') }}</ion-label>
       <ion-accordion-group class="pt-1">
         <ion-accordion value="first">
-          <ion-item slot="header" color="light" class="ion-item-no-padding">
-            <ion-label class="client-text">{{ t('modal.history.non-profit.cloudess.name') }}</ion-label>
+          <ion-item slot="header" color="light" class="ion-item-no-padding" (click)="toggleAccordion('first', 2)">
+            <ion-label>{{ t('modal.history.non-profit.cloudess.name') }}</ion-label>
+            <ion-icon class="ion-accordion-toggle-icon" src="assets/icons/ionic/chevron-down-outline.svg" [class.rotated]="isAccordionOpen('first', 2)"></ion-icon>
           </ion-item>
           <div class="accordion-content" slot="content">
             <ion-label class="accordion-role">{{ t('modal.history.non-profit.cloudess.role') }}</ion-label>
@@ -187,8 +192,9 @@
           </div>
         </ion-accordion>
         <ion-accordion value="second">
-          <ion-item slot="header" color="light" class="ion-item-no-padding">
-            <ion-label class="client-text">{{ t('modal.history.non-profit.microsoft.name') }}</ion-label>
+          <ion-item slot="header" color="light" class="ion-item-no-padding" (click)="toggleAccordion('second', 2)">
+            <ion-label>{{ t('modal.history.non-profit.microsoft.name') }}</ion-label>
+            <ion-icon class="ion-accordion-toggle-icon" src="assets/icons/ionic/chevron-down-outline.svg" [class.rotated]="isAccordionOpen('second', 2)"></ion-icon>
           </ion-item>
           <div class="accordion-content" slot="content">
             <ion-label class="accordion-role">{{ t('modal.history.non-profit.microsoft.role') }}</ion-label>
@@ -214,138 +220,23 @@
         </ion-accordion>
       </ion-accordion-group>
       <ion-label class="secondary-header pt-2 popup-title">{{ t('modal.history.education.title') }}</ion-label>
+      <ion-label class="secondary-header pt-1">{{ t('modal.history.education.bsc') }}</ion-label>
+      <ion-label class="text-italic date-text">{{ t('modal.history.education.ongoing') }}</ion-label>
 
+      <ion-label class="text-normal pt-1">{{ t('modal.history.education.summary') }}</ion-label>
+      <ion-label class="text-normal pt-1">{{ t('modal.history.education.summary-2') }}</ion-label>
 
+      <ion-label class="pt-1">{{ t('modal.history.education.uned.name') }}</ion-label>
+      <ion-label class="text-italic date-text">{{ t('modal.history.education.uned.date') }}</ion-label>
+      <ion-label class="text-italic date-text">{{ t('modal.history.education.uned.location') }}</ion-label>
 
+      <ion-label class="pt-1">{{ t('modal.history.education.upv.name') }}</ion-label>
+      <ion-label class="text-italic date-text">{{ t('modal.history.education.upv.date') }}</ion-label>
+      <ion-label class="text-italic date-text">{{ t('modal.history.education.upv.location') }}</ion-label>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <!-- BlackBelt-->
-      <!--<ion-label class="secondary-header pt-1">{{ t('modal.history.employment.blackbelt.role') }}</ion-label>
-      <ion-label class="client-text">{{ t('modal.history.employment.blackbelt.name') }}</ion-label>
-      <ion-label class="text-italic date-text">{{ t('modal.history.employment.blackbelt.date') }}</ion-label>
-      <ion-label class="text-normal pt-1 pb-1">{{ t('modal.history.employment.blackbelt.summary') }}</ion-label>-->
-      <!--<div class="list-container">
-        <img class="image-2" src="assets/icons/list_dot_gold.svg">
-        <ion-label class="text-normal pl-1">{{ t('modal.history.employment.blackbelt.tasks.first') }}</ion-label>
-      </div>
-      <div class="list-container pt-1">
-        <img class="image-2" src="assets/icons/list_dot_gold.svg">
-        <ion-label class="text-normal pl-1">{{ t('modal.history.employment.blackbelt.tasks.second') }}</ion-label>
-      </div>
-      <div class="list-container pt-1">
-        <img class="image-2" src="assets/icons/list_dot_gold.svg">
-        <ion-label class="text-normal pl-1">{{ t('modal.history.employment.blackbelt.tasks.third') }}</ion-label>
-      </div>
-      <ion-label class="secondary-header pt-1">{{ t('modal.projects.stack') }}</ion-label>
-      <div class="list-container pt-1">
-        <ion-label class="code-text text-normal">{{ t('modal.history.employment.blackbelt.stack') }}</ion-label>
-      </div>-->
-      <!-- Microsoft-->
-      <!--<ion-label class="secondary-header pt-1">{{ t('modal.history.employment.microsoft.role') }}</ion-label>
-      &lt;!&ndash;<ion-label class="client-text">{{ t('modal.history.employment.microsoft.name') }}</ion-label>&ndash;&gt;
-      <ion-label class="text-italic date-text">{{ t('modal.history.employment.microsoft.date') }}</ion-label>
-      <ion-label class="text-normal pt-1 pb-1">{{ t('modal.history.employment.microsoft.summary') }}</ion-label>-->
-      <!--<div class="list-container">
-        <img class="image-2" src="assets/icons/list_dot_gold.svg">
-        <ion-label class="text-normal pl-1">{{ t('modal.history.employment.microsoft.tasks.first') }}</ion-label>
-      </div>
-      <div class="list-container pt-1">
-        <img class="image-2" src="assets/icons/list_dot_gold.svg">
-        <ion-label class="text-normal pl-1">{{ t('modal.history.employment.microsoft.tasks.second') }}</ion-label>
-      </div>
-      <div class="list-container pt-1">
-        <img class="image-2" src="assets/icons/list_dot_gold.svg">
-        <ion-label class="text-normal pl-1">{{ t('modal.history.employment.microsoft.tasks.third') }}</ion-label>
-      </div>
-      <ion-label class="secondary-header pt-1">{{ t('modal.projects.stack') }}</ion-label>
-      <div class="list-container pt-1">
-        <ion-label class="code-text text-normal">{{ t('modal.history.employment.microsoft.stack') }}</ion-label>
-      </div>-->
-      <!-- BCM-->
-      <!--<ion-label class="secondary-header pt-1">{{ t('modal.history.employment.bcm.role') }}</ion-label>
-      &lt;!&ndash;<ion-label class="client-text">{{ t('modal.history.employment.bcm.name') }}</ion-label>&ndash;&gt;
-      <ion-label class="text-italic date-text">{{ t('modal.history.employment.bcm.date') }}</ion-label>
-      <ion-label class="text-normal pt-1 pb-1">{{ t('modal.history.employment.bcm.summary') }}</ion-label>-->
-      <!--<div class="list-container">
-        <img class="image-2" src="assets/icons/list_dot_gold.svg">
-        <ion-label class="text-normal pl-1">{{ t('modal.history.employment.bcm.tasks.first') }}</ion-label>
-      </div>
-      <div class="list-container pt-1">
-        <img class="image-2" src="assets/icons/list_dot_gold.svg">
-        <ion-label class="text-normal pl-1">{{ t('modal.history.employment.bcm.tasks.second') }}</ion-label>
-      </div>
-      <div class="list-container pt-1">
-        <img class="image-2" src="assets/icons/list_dot_gold.svg">
-        <ion-label class="text-normal pl-1">{{ t('modal.history.employment.bcm.tasks.third') }}</ion-label>
-      </div>
-      <ion-label class="secondary-header pt-1">{{ t('modal.projects.stack') }}</ion-label>
-      <div class="list-container pt-1">
-        <ion-label class="code-text text-normal">{{ t('modal.history.employment.bcm.stack') }}</ion-label>
-      </div>-->
-      <!-- GE -->
-      <!--<ion-label class="secondary-header pt-1">{{ t('modal.history.employment.ge.role') }}</ion-label>
-      &lt;!&ndash;<ion-label class="client-text">{{ t('modal.history.employment.ge.name') }}</ion-label>&ndash;&gt;
-      <ion-label class="text-italic date-text">{{ t('modal.history.employment.ge.date') }}</ion-label>
-      <ion-label class="text-normal pt-1 pb-1">{{ t('modal.history.employment.ge.summary') }}</ion-label>-->
-      <!--<div class="list-container">
-        <img class="image-2" src="assets/icons/list_dot_gold.svg">
-        <ion-label class="text-normal pl-1">{{ t('modal.history.employment.ge.tasks.first') }}</ion-label>
-      </div>
-      <div class="list-container pt-1">
-        <img class="image-2" src="assets/icons/list_dot_gold.svg">
-        <ion-label class="text-normal pl-1">{{ t('modal.history.employment.ge.tasks.second') }}</ion-label>
-      </div>
-      <div class="list-container pt-1">
-        <img class="image-2" src="assets/icons/list_dot_gold.svg">
-        <ion-label class="text-normal pl-1">{{ t('modal.history.employment.ge.tasks.third') }}</ion-label>
-      </div>
-      <ion-label class="secondary-header pt-1">{{ t('modal.projects.stack') }}</ion-label>
-      <div class="list-container pt-1">
-        <ion-label class="code-text text-normal">{{ t('modal.history.employment.ge.stack') }}</ion-label>
-      </div>-->
-      <!-- Balinternet -->
-      <!--<ion-label class="secondary-header pt-1">{{ t('modal.history.employment.balinternet.role') }}</ion-label>
-      &lt;!&ndash;<ion-label class="client-text">{{ t('modal.history.employment.balinternet.name') }}</ion-label>&ndash;&gt;
-      <ion-label class="text-italic date-text">{{ t('modal.history.employment.balinternet.date') }}</ion-label>
-      <ion-label class="text-normal pt-1 pb-1">{{ t('modal.history.employment.balinternet.summary') }}</ion-label>-->
-      <!--<div class="list-container">
-        <img class="image-2" src="assets/icons/list_dot_gold.svg">
-        <ion-label class="text-normal pl-1">{{ t('modal.history.employment.balinternet.tasks.first') }}</ion-label>
-      </div>
-      <div class="list-container pt-1">
-        <img class="image-2" src="assets/icons/list_dot_gold.svg">
-        <ion-label class="text-normal pl-1">{{ t('modal.history.employment.balinternet.tasks.second') }}</ion-label>
-      </div>
-      <div class="list-container pt-1">
-        <img class="image-2" src="assets/icons/list_dot_gold.svg">
-        <ion-label class="text-normal pl-1">{{ t('modal.history.employment.balinternet.tasks.third') }}</ion-label>
-      </div>
-      <ion-label class="secondary-header pt-1">{{ t('modal.projects.stack') }}</ion-label>
-      <div class="list-container pt-1">
-        <ion-label class="code-text text-normal">{{ t('modal.history.employment.balinternet.stack') }}</ion-label>
-      </div>-->
+      <ion-label class="pt-1">{{ t('modal.history.education.oe.name') }}</ion-label>
+      <ion-label class="text-italic date-text">{{ t('modal.history.education.oe.date') }}</ion-label>
+      <ion-label class="text-italic date-text">{{ t('modal.history.education.oe.location') }}</ion-label>
     </div>
   </div>
 </ion-content>

@@ -3,7 +3,6 @@ import {TranslocoService} from '@ngneat/transloco';
 import {ProjectDetailComponent} from './components/project-detail-component/project-detail-component.component';
 import {ModalController} from '@ionic/angular';
 import {EmploymentHistoryComponentComponent} from './components/employment-history-component/employment-history-component.component';
-import {NavigationStart, Router} from '@angular/router';
 import {AutocloseOverlaysService} from './service/AutoCloseOverlayService';
 
 @Component({
@@ -18,22 +17,14 @@ export class AppComponent implements OnInit {
   @ViewChild('contactSection') contactSection: ElementRef;
 
   title = 'doraduszin-developer-website';
-  selectedTab = 'about';
+  selectedTab = '';
   selfIntroText = '';
   showLanguages = false;
   scrollPosition = 0;
 
   constructor(private translocoService: TranslocoService,
               private modalController: ModalController,
-              private router: Router,
               private autoCloseOverlaysService: AutocloseOverlaysService) {
-    /*this.router.events.subscribe((event: any): void => {
-      if (event instanceof NavigationStart) {
-        if (event.navigationTrigger === 'popstate') {
-          this.autoCloseOverlaysService.trigger();
-        }
-      }
-    });*/
   }
 
   ngOnInit(): void {
@@ -48,9 +39,70 @@ export class AppComponent implements OnInit {
   }
 
   @HostListener('window:popstate', ['$event'])
-  onPopState() {
+  onPopState(): void {
     this.autoCloseOverlaysService.trigger();
   }
+
+  handleInViewport(event: { target: Element; visible: boolean }): void {
+    const sectionId = event.target.id;
+    if (event.visible) {
+      switch (sectionId) {
+        case 'aboutSection':
+          this.selectedTab = 'about';
+          break;
+        case 'projectsSection':
+          this.selectedTab = 'projects';
+          break;
+        case 'contactSection':
+          this.selectedTab = 'contact';
+          break;
+      }
+    }
+  }
+
+  /*@HostListener('window:scroll', [])
+  onScroll(): void {
+    this.updateSelectedTab();
+  }
+
+  updateSelectedTab(): void {
+    /!*console.log('updateSelectedTab');*!/
+    const aboutSection = this.aboutSection.nativeElement;
+    /!*console.log('aboutSection: ', aboutSection);*!/
+    const projectsSection = this.projectsSection.nativeElement;
+    const contactSection = this.contactSection.nativeElement;
+
+    const aboutRect = aboutSection.getBoundingClientRect();
+    /!*console.log('aboutRect: ', aboutRect);*!/
+    const projectsRect = projectsSection.getBoundingClientRect();
+    const contactRect = contactSection.getBoundingClientRect();
+
+    console.log('this.isElementInViewport(aboutRect): ', this.isElementInViewport(aboutRect));
+
+    if (this.isElementInViewport(aboutRect)) {
+      this.selectedTab = 'about';
+    } /!*else if (this.isElementInViewport(projectsRect)) {
+      this.selectedTab = 'projects';
+    } else if (this.isElementInViewport(contactRect)) {
+      this.selectedTab = 'contact';
+    }*!/
+  }
+
+  isElementInViewport(rect: DOMRect): boolean {
+    const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+    /!*const windowWidth = window.innerWidth || document.documentElement.clientWidth;*!/
+
+    console.log('windowHeight: ', windowHeight);
+    console.log('rect.top: ', rect.top);
+    console.log('rect.bottom: ', rect.bottom);
+
+    return (
+      /!*rect.top >= 0 &&*!/
+      /!*rect.left >= 0 &&*!/
+      rect.bottom <= windowHeight
+      /!*rect.right <= windowWidth*!/
+    );
+  }*/
 
   tabChanged(tab: string): void {
     this.selectedTab = tab;

@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { TranslocoRootModule } from './transloco-root.module';
 import {CommonModule} from '@angular/common';
 import {ProjectDetailComponent} from './components/project-detail-component/project-detail-component.component';
+import {AutocloseOverlaysService} from './service/AutoCloseOverlayService';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,7 @@ import {ProjectDetailComponent} from './components/project-detail-component/proj
     }),
     HttpClientModule
   ],
-  providers: [],
+  providers: [AutocloseOverlaysService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

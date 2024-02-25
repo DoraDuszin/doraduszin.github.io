@@ -1,4 +1,4 @@
-import {Component, OnDestroy, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {IonicModule, ModalController, Platform} from '@ionic/angular';
 import {TranslocoDirective, TranslocoService} from '@ngneat/transloco';
 
@@ -12,7 +12,7 @@ import {TranslocoDirective, TranslocoService} from '@ngneat/transloco';
   templateUrl: './employment-history-component.component.html',
   styleUrl: './employment-history-component.component.css'
 })
-export class EmploymentHistoryComponentComponent implements OnInit, OnDestroy {
+export class EmploymentHistoryComponentComponent implements OnInit {
 
   constructor(private modalController: ModalController,
               private platform: Platform) {
@@ -22,16 +22,9 @@ export class EmploymentHistoryComponentComponent implements OnInit, OnDestroy {
     /*this.platform.backButton.subscribeWithPriority(0, () => {
       this.close();
     });*/
-    window.addEventListener('popstate', this.onPopState.bind(this));
-  }
-
-  ngOnDestroy(): void {
-    window.removeEventListener('popstate', this.onPopState.bind(this));
-  }
-
-  onPopState(event: PopStateEvent): void {
-    if (this.modalController.getTop()) {
-      this.close();
+    if (!window.history.state.modal) {
+      const modalState = { modal: true };
+      history.pushState(modalState, null);
     }
   }
 

@@ -1,8 +1,10 @@
-import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
+import {Component, ElementRef, HostListener, OnInit, ViewChild} from '@angular/core';
 import {TranslocoService} from '@ngneat/transloco';
 import {ProjectDetailComponent} from './components/project-detail-component/project-detail-component.component';
 import {ModalController} from '@ionic/angular';
 import {EmploymentHistoryComponentComponent} from './components/employment-history-component/employment-history-component.component';
+import {NavigationStart, Router} from '@angular/router';
+import {AutocloseOverlaysService} from './service/AutoCloseOverlayService';
 
 @Component({
   selector: 'app-root',
@@ -22,7 +24,16 @@ export class AppComponent implements OnInit {
   scrollPosition = 0;
 
   constructor(private translocoService: TranslocoService,
-              private modalController: ModalController) {
+              private modalController: ModalController,
+              private router: Router,
+              private autoCloseOverlaysService: AutocloseOverlaysService) {
+    /*this.router.events.subscribe((event: any): void => {
+      if (event instanceof NavigationStart) {
+        if (event.navigationTrigger === 'popstate') {
+          this.autoCloseOverlaysService.trigger();
+        }
+      }
+    });*/
   }
 
   ngOnInit(): void {
@@ -34,6 +45,11 @@ export class AppComponent implements OnInit {
         typingAnimation.classList.add('typing');
       }
     }, 2000);
+  }
+
+  @HostListener('window:popstate', ['$event'])
+  onPopState() {
+    this.autoCloseOverlaysService.trigger();
   }
 
   tabChanged(tab: string): void {

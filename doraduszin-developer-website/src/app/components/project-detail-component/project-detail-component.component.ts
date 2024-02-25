@@ -30,9 +30,13 @@ export class ProjectDetailComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.platform.backButton.subscribeWithPriority(0, () => {
+    /*this.platform.backButton.subscribeWithPriority(0, () => {
       this.close();
-    });
+    });*/
+    if (!window.history.state.modal) {
+      const modalState = { modal: true };
+      history.pushState(modalState, null);
+    }
     this.translocoService.selectTranslateObject('content.projects.project-' + this.projectNumber)
       .subscribe(translation => {
       this.projectName = translation.title;

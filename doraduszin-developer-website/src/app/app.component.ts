@@ -1,5 +1,5 @@
 import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
-import {TranslocoService} from '@ngneat/transloco';
+import {getBrowserLang, TranslocoService} from '@ngneat/transloco';
 import {ProjectDetailComponent} from './components/project-detail-component/project-detail-component.component';
 import {ModalController} from '@ionic/angular';
 import {EmploymentHistoryComponentComponent} from './components/employment-history-component/employment-history-component.component';
@@ -22,6 +22,7 @@ export class AppComponent implements OnInit {
   scrollPosition = 0;
   testText = '';
   testText2 = '';
+  browserLang = '';
 
   constructor(private translocoService: TranslocoService,
               private modalController: ModalController) {
@@ -30,6 +31,7 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     /*this.openProjectDetails(1);*/
     /*this.openEmploymentHistory();*/
+    this.browserLang = getBrowserLang();
     this.translocoService.selectTranslate('general.personal.details.name').subscribe(res => {
       this.testText = res;
     });

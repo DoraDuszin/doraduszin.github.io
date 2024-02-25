@@ -8,9 +8,15 @@
   --light-gold-color: #f6f0e7;
 }
 
-body {
+/*body {
   margin: 0;
   font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 400;
+}*/
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
   font-weight: 400;
 }
 
@@ -943,7 +949,7 @@ ion-card-header+.card-content-md {
 }
 
 /* thin 100 */
-@font-face {
+/*@font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 100;
@@ -957,7 +963,7 @@ ion-card-header+.card-content-md {
   src: url('assets/fonts/static/Montserrat-ThinItalic.ttf') format('truetype');
 }
 
-/* extra light 200*/
+!* extra light 200*!
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
@@ -972,7 +978,7 @@ ion-card-header+.card-content-md {
   src: url('assets/fonts/static/Montserrat-ExtraLightItalic.ttf') format('truetype');
 }
 
-/* regular 400 */
+!* regular 400 *!
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
@@ -987,7 +993,7 @@ ion-card-header+.card-content-md {
   src: url('assets/fonts/static/Montserrat-Italic.ttf') format('truetype');
 }
 
-/* semi bold 600 */
+!* semi bold 600 *!
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
@@ -1002,7 +1008,7 @@ ion-card-header+.card-content-md {
   src: url('assets/fonts/static/Montserrat-SemiBoldItalic.ttf') format('truetype');
 }
 
-/* bold 700 */
+!* bold 700 *!
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
@@ -1015,4 +1021,4 @@ ion-card-header+.card-content-md {
   font-style: italic;
   font-weight: 700;
   src: url('assets/fonts/static/Montserrat-BoldItalic.ttf') format('truetype');
-}
+}*/

@@ -11,9 +11,9 @@ import {EmploymentHistoryComponentComponent} from './components/employment-histo
 })
 export class AppComponent implements OnInit {
 
-  @ViewChild('aboutSection') aboutSection: ElementRef;
+  /*@ViewChild('aboutSection') aboutSection: ElementRef;
   @ViewChild('projectsSection') projectsSection: ElementRef;
-  @ViewChild('contactSection') contactSection: ElementRef;
+  @ViewChild('contactSection') contactSection: ElementRef;*/
 
   title = 'doraduszin-developer-website';
   selectedTab = 'about';
@@ -37,7 +37,7 @@ export class AppComponent implements OnInit {
   }
 
   tabChanged(tab: string): void {
-    this.selectedTab = tab;
+    /*this.selectedTab = tab;
     switch (tab) {
       case 'about':
         this.aboutSection.nativeElement.scrollIntoView({ behavior: 'smooth' });
@@ -50,7 +50,7 @@ export class AppComponent implements OnInit {
         break;
       default:
         break;
-    }
+    }*/
   }
 
   toggleLanguages(): void {

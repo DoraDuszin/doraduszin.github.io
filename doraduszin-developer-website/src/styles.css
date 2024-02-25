@@ -8,15 +8,9 @@
   --light-gold-color: #f6f0e7;
 }
 
-/*body {
-  margin: 0;
-  font-family: 'Montserrat', Arial, sans-serif;
-  font-weight: 400;
-}*/
-
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
   font-weight: 400;
 }
 
@@ -819,20 +813,20 @@ ion-card-header+.card-content-md {
   padding: 1rem 3rem 2rem 3rem;
 }*/
 
-/*@keyframes typingDots {
+@keyframes typingDots {
   0% { content: '.'; }
   50% { content: '..'; }
   75% { content: '...'; }
   100% { content: ''; }
-}*/
+}
 
-/*#typing-dots::after {
+#typing-dots::after {
   content: '';
   animation: typingDots 2.5s steps(4) infinite;
   white-space: nowrap;
-}*/
+}
 
-/*@keyframes floatAnimation {
+@keyframes floatAnimation {
   0% {
     transform: translate(0%, 0);
   }
@@ -849,9 +843,9 @@ ion-card-header+.card-content-md {
 
 .floating {
   animation: floatAnimation 12s ease-in-out infinite;
-}*/
+}
 
-/*@keyframes pushAnimation {
+@keyframes pushAnimation {
   0% {
     transform: translateX(0);
   }
@@ -868,9 +862,9 @@ ion-card-header+.card-content-md {
 
 .pushing {
   animation: pushAnimation 12s ease-in-out infinite;
-}*/
+}
 
-/*@keyframes upDownAnimation {
+@keyframes upDownAnimation {
   0% {
     transform: translateY(0);
   }
@@ -887,9 +881,9 @@ ion-card-header+.card-content-md {
 
 .upDown {
   animation: upDownAnimation 12s ease-in-out infinite;
-}*/
+}
 
-/*.typing-animation {
+.typing-animation {
   overflow: hidden;
   white-space: nowrap;
   border-right: 0.1rem var(--gold-color) solid;
@@ -903,9 +897,9 @@ ion-card-header+.card-content-md {
   to {
     width: 110%;
   }
-}*/
+}
 
-/*.typing-animation::before {
+.typing-animation::before {
   content: '';
   display: inline-block;
   vertical-align: bottom;
@@ -922,7 +916,7 @@ ion-card-header+.card-content-md {
   to {
     background-color: transparent;
   }
-}*/
+}
 
 #hello-world-animated {
   display: flex;
@@ -949,7 +943,7 @@ ion-card-header+.card-content-md {
 }
 
 /* thin 100 */
-/*@font-face {
+@font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 100;
@@ -963,7 +957,7 @@ ion-card-header+.card-content-md {
   src: url('assets/fonts/static/Montserrat-ThinItalic.ttf') format('truetype');
 }
 
-!* extra light 200*!
+/* extra light 200*/
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
@@ -978,7 +972,7 @@ ion-card-header+.card-content-md {
   src: url('assets/fonts/static/Montserrat-ExtraLightItalic.ttf') format('truetype');
 }
 
-!* regular 400 *!
+/* regular 400 */
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
@@ -993,7 +987,7 @@ ion-card-header+.card-content-md {
   src: url('assets/fonts/static/Montserrat-Italic.ttf') format('truetype');
 }
 
-!* semi bold 600 *!
+/* semi bold 600 */
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
@@ -1008,7 +1002,7 @@ ion-card-header+.card-content-md {
   src: url('assets/fonts/static/Montserrat-SemiBoldItalic.ttf') format('truetype');
 }
 
-!* bold 700 *!
+/* bold 700 */
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
@@ -1021,4 +1015,4 @@ ion-card-header+.card-content-md {
   font-style: italic;
   font-weight: 700;
   src: url('assets/fonts/static/Montserrat-BoldItalic.ttf') format('truetype');
-}*/
+}

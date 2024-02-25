@@ -20,6 +20,7 @@ export class AppComponent implements OnInit {
   selfIntroText = '';
   showLanguages = false;
   scrollPosition = 0;
+  testText = '';
 
   constructor(private translocoService: TranslocoService,
               private modalController: ModalController) {
@@ -28,6 +29,9 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     /*this.openProjectDetails(1);*/
     /*this.openEmploymentHistory();*/
+    this.translocoService.selectTranslate('general.personal.details.name').subscribe(res => {
+      this.testText = res;
+    });
     setTimeout(() => {
       const typingAnimation = document.getElementById('typing-animation');
       if (typingAnimation) {
@@ -35,6 +39,12 @@ export class AppComponent implements OnInit {
       }
     }, 2000);
   }
+
+  /*getTranslation(key: string): any {
+    this.translocoService.selectTranslate('general.personal.details.name').subscribe(res => {
+      return res;
+    });
+  }*/
 
   tabChanged(tab: string): void {
     /*this.selectedTab = tab;

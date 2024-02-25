@@ -21,7 +21,6 @@
     "@angular/router": "^17.1.2",
     "@ionic/angular": "^7.7.1",
     "@ngneat/transloco": "^6.0.4",
-    "flag-icon-css": "^4.1.7",
     "rxjs": "^7.7.1",
     "tslib": "^2.0.0",
     "zone.js": "^0.14.3"

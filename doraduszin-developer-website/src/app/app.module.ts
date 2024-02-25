@@ -21,7 +21,9 @@ import {ProjectDetailComponent} from './components/project-detail-component/proj
     TranslocoRootModule,
     CommonModule,
     IonicModule.forRoot({
-      scrollAssist: false
+      scrollAssist: false,
+      hardwareBackButton: true,
+      experimentalCloseWatcher: true
     }),
     HttpClientModule
   ],

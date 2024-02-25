@@ -14,7 +14,6 @@ import {environment} from '../environments/environment';
         config: {
           availableLangs: ['en', 'es', 'hu'],
           defaultLang: determineDefaultLanguage(),
-          /*defaultLang: 'en',*/
           reRenderOnLangChange: true,
           prodMode: environment.production,
         },
@@ -26,12 +25,21 @@ export class TranslocoRootModule {
 }
 
 function determineDefaultLanguage(): string {
-  const browserLang = getBrowserLang();
-  const normalizedLang = browserLang.split('-')[0];
+  const browserLang = getBrowserLang().toLowerCase();
 
-  if (['en', 'es', 'hu'].includes(normalizedLang)) {
-    return normalizedLang;
+  if (browserLang.includes('es')) {
+    return 'es';
+  } else if (browserLang.includes('hu')) {
+    return 'hu';
   } else {
     return 'en';
   }
+
+  /*const normalizedLang = browserLang.split('-')[0];*/
+
+  /*if (['en', 'es', 'hu'].includes(normalizedLang)) {
+    return normalizedLang;
+  } else {
+    return 'en';
+  }*/
 }

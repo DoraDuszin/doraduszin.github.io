@@ -21,6 +21,7 @@ export class AppComponent implements OnInit {
   showLanguages = false;
   scrollPosition = 0;
   testText = '';
+  testText2 = '';
 
   constructor(private translocoService: TranslocoService,
               private modalController: ModalController) {
@@ -32,6 +33,10 @@ export class AppComponent implements OnInit {
     this.translocoService.selectTranslate('general.personal.details.name').subscribe(res => {
       this.testText = res;
     });
+    this.translocoService.selectTranslateObject('general.personal.details')
+      .subscribe(translation => {
+        this.testText2 = translation.name;
+      });
     setTimeout(() => {
       const typingAnimation = document.getElementById('typing-animation');
       if (typingAnimation) {

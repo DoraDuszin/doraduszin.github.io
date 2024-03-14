@@ -371,6 +371,7 @@ ion-card {
 
 .card-container {
   padding: 0 3rem 2rem 3rem;
+  height: 100%;
 }
 
 .card-gradient {
@@ -425,6 +426,7 @@ ion-card-content {
   border-radius: 0;
   box-shadow: none;
   contain: none;
+  flex-grow: 1;
 }
 
 .outer-card::after {
@@ -443,6 +445,8 @@ ion-card-content {
   border-radius: 0;
   box-shadow: none;
   contain: none;
+  background: transparent;
+  height: 100%;
 }
 
 .outer-card-black::after {
@@ -475,6 +479,7 @@ ion-card-content {
 
 .inner-card {
   z-index: 1;
+  height: 100%;
 }
 
 /*.inner-card-inv {
@@ -596,6 +601,8 @@ ion-button.language-button {
   width: 100%;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
+  padding-bottom: 1rem;
 }
 
 .color-gold {
@@ -924,6 +931,100 @@ ion-card-header+.card-content-md {
 
 #hello-world-small {
   display: none;
+}
+
+.skill-card {
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.card-container-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.desktop-wrapper {
+  margin: 0;
+  display: flex;
+}
+
+.desktop-wrapper-stretch {
+  margin: 0;
+  display: flex;
+  align-items: stretch;
+}
+
+.inner-desktop {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.same-height-cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-picture {
+  width: 100%;
+}
+
+/* desktop */
+@media only screen and (min-width: 1024px) {
+  .profile-picture {
+    width: 30%;
+  }
+
+  .skill-card {
+    padding: 1rem;
+    margin-bottom: 0;
+    display: flex;
+  }
+
+  .desktop-wrapper {
+    margin-left: 8rem;
+    margin-right: 8rem;
+  }
+
+  .desktop-wrapper-stretch {
+    margin-left: 8rem;
+    margin-right: 8rem;
+    display: flex;
+    align-items: stretch;
+  }
+
+  .inner-desktop {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  .card-container {
+    /*padding: 0 3rem 2rem 3rem;*/
+    /*padding: 0 0 0 0;*/
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 100%;
+  }
+
+  .outer-card-black::after {
+    content: "";
+    position: absolute;
+    inset: 0rem 0.5rem 1.5rem 2rem;
+    border: 0.1rem linear-gradient(184deg, rgba(0,0,0,0.85) 0%, rgba(184,138,68,1) 100%) var(--gold-color);
+    border-radius: 2rem;
+    z-index: 0;
+    background: linear-gradient(184deg, rgba(0,0,0,0.85) 0%, rgba(221,199,166,1) 100%);
+  }
+
+  .outer-card::after {
+    content: "";
+    position: absolute;
+    inset: 0rem 0.5rem 1.5rem 2rem;
+    border: 0.1rem linear-gradient(184deg, rgba(251,248,244,1) 0%, rgba(184,138,68,1) 100%) var(--gold-color);
+    border-radius: 2rem;
+    z-index: 0;
+    background: linear-gradient(184deg, rgba(255,255,255,1) 0%, rgba(221,199,166,1) 100%);
+  }
 }
 
 /* extra small devices */

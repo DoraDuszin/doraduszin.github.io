@@ -1,0 +1,15 @@
+.intro a > i {
+  color: var(--gold-color);
+}
+
+.intro a > i:hover {
+  color: var(--white-color);
+}
+
+.intro a .fa {
+  opacity: 1 !important;
+}
+
+.list-inline {
+  margin: 1.5rem 0 1.5rem 0;
+}

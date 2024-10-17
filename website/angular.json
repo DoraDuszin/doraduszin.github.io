@@ -25,9 +25,36 @@
               "src/assets"
             ],
             "styles": [
+              "src/assets/css/animate.min.css",
+              "src/assets/css/bootstrap.min.css",
+              "src/assets/css/font-awesome.min.css",
+              "src/assets/css/ionicons.min.css",
+              "src/assets/css/swipebox.css",
+              "src/assets/css/universal.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/jquery-1.12.4.min.js",
+              "src/assets/js/jquery.easing.min.js",
+              "src/assets/js/jquery.parallax.min.js",
+              "src/assets/js/jquery.placeholder.min.js",
+              "src/assets/js/jquery.shuffle.min.js",
+              "src/assets/js/jquery.smartmenus.js",
+              "src/assets/js/jquery.swipebox.min.js",
+              "src/assets/js/jquery.circle-progress.min.js",
+              "src/assets/js/jquery.countdown.min.js",
+              "src/assets/js/bootstrap.min.js",
+              "src/assets/js/device.min.js",
+              "src/assets/js/form.min.js",
+              "src/assets/js/magic.min.js",
+              "src/assets/js/magic2.min.js",
+              "src/assets/js/map.js",
+              "src/assets/js/map-dark.js",
+              "src/assets/js/smoothscroll.min.js",
+              "src/assets/js/text-rotator.min.js",
+              "src/assets/js/universal.js",
+              "src/assets/js/wow.min.js"
+            ]
           },
           "configurations": {
             "production": {

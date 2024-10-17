@@ -1,6 +1,8 @@
 :root {
   --gold-color: #b88a44;
+  --gold-color-overlay: rgba(184, 138, 68, 0.7);
   --black-color: #000000;
+  --black-color-overlay: rgba(0, 0, 0, 0.7);
   --white-color: #ffffff;
   --light-gray-color: #f5f3f1;
   --light-gold-color: #f6f0e7;
@@ -8,4 +10,5 @@
 
 .background-black {
   background-color: var(--black-color);
+  background-size: cover;
 }

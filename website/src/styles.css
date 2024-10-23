@@ -8,7 +8,17 @@
   --light-gold-color: #f6f0e7;
 }
 
+body {
+  margin:0;
+}
+
 .background-black {
   background-color: var(--black-color);
   background-size: cover;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

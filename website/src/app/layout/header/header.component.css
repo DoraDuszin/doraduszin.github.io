@@ -36,6 +36,7 @@
   top: 50%;
   transform: translate(-50%, -50%);
   color: var(--black-color);
+  width: 100%;
 }
 
 @keyframes slide {

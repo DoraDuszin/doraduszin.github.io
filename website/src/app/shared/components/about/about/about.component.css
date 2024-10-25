@@ -1,0 +1,26 @@
+#about h3 {
+  color: var(--black);
+}
+
+#about .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.img-wrapper {
+  padding-bottom: 0;
+}
+
+@media (max-width: 991px) {
+
+  #about .container .flex-center {
+    flex-direction: column-reverse;
+  }
+
+  .img-wrapper {
+    padding-bottom: 3rem;
+  }
+
+}

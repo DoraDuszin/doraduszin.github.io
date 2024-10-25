@@ -33,6 +33,15 @@
   opacity: 0.5;
 }
 
+.navbar-header {
+  width: 100%;
+}
+
+.navbar-right {
+  align-items: baseline;
+  justify-content: flex-end;
+}
+
 /* scrolled */
 
 .navbar-custom {

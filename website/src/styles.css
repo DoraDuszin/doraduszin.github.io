@@ -38,6 +38,26 @@ body {
   margin:0;
 }
 
+section {
+  padding: 0 2rem 0 2rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 0 0;
+}
+
+p {
+  margin: 1rem 0 1rem 0;
+}
+
+.row {
+  padding: 6rem 0 6rem 0;
+}
+
+.row:not(:first-child) {
+  padding: 0 0 6rem 0;
+}
+
 .background-black {
   background-color: var(--black);
   background-size: cover;
@@ -53,9 +73,21 @@ body {
   margin: 0;
 }
 
+.pt-4 {
+  padding-top: 4rem;
+}
+
 .pb-3 {
   padding-bottom: 3rem;
 }
+
+/*.w-100 {
+  width: 100%;
+}
+
+.justify-content-start {
+  justify-content: flex-start;
+}*/
 
 @keyframes gradient {
   0% {
@@ -67,4 +99,16 @@ body {
   100% {
     background-position: 0% 50%;
   }
+}
+
+@media (max-width: 991px) {
+
+  .row {
+    padding: 4rem 0 4rem 0;
+  }
+
+  .row:not(:first-child) {
+    padding: 0 0 4rem 0;
+  }
+
 }

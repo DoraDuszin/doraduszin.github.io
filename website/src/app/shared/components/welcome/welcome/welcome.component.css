@@ -9,13 +9,18 @@
   flex-direction: column;
 }
 
+.img-wrapper {
+  padding-bottom: 0;
+}
+
 @media (max-width: 991px) {
+
   #welcome .container .flex-center {
     flex-direction: column-reverse;
   }
 
-  #screen {
-    padding-bottom: 6rem;
+  .img-wrapper {
+    padding-bottom: 3rem;
   }
 
 }

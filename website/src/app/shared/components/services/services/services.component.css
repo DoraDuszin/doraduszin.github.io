@@ -8,16 +8,27 @@
   color: var(--black);
 }
 
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  margin: 1rem 0;
+}
+
 #services .cards p {
   margin: 0;
-  padding: 3rem 0 3rem 0;
+  padding: 0 1rem 3rem 0;
 }
 
 .service-wrapper {
-  background-color: rgba(255, 255, 255, 0.6);
-  border-radius: 2rem;
+  background-color: var(--white);
+  /*border-radius: 2rem;*/
   box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
   text-align: center;
+  padding: 0 1rem;
 }
 
 .service-wrapper h4 {
@@ -32,7 +43,7 @@
 }
 
 .gradient-icon-2 {
-  background: linear-gradient(-45deg, var(--color-1), var(--color-4));
+  background: linear-gradient(-45deg, var(--color-1), var(--color-6));
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -47,10 +58,4 @@
   background: linear-gradient(-45deg, var(--color-1), var(--color-2));
   -webkit-background-clip: text;
   color: transparent;
-}
-
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }

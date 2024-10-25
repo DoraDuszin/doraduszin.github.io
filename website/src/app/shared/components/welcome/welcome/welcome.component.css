@@ -1,0 +1,21 @@
+#welcome h3 {
+  color: var(--black);
+}
+
+#welcome .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (max-width: 991px) {
+  #welcome .container .flex-center {
+    flex-direction: column-reverse;
+  }
+
+  #screen {
+    padding-bottom: 6rem;
+  }
+
+}

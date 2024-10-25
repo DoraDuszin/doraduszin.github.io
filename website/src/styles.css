@@ -1,11 +1,37 @@
 :root {
+  /* main */
+  --white: #ffffff;
+  --white-half-opacity: rgba(255, 255, 255, 0.5);
+  --black: #000000;
+  --base-box-shadow: 0 .1em .1em rgba(0, 0, 0, 0.1);
+
   --gold-color: #b88a44;
   --gold-color-overlay: rgba(184, 138, 68, 0.7);
-  --black-color: #000000;
   --black-color-overlay: rgba(0, 0, 0, 0.7);
-  --white-color: #ffffff;
   --light-gray-color: #f5f3f1;
   --light-gold-color: #f6f0e7;
+
+  /* gaia */
+  --color-1: #6cb183;
+  --color-2: #5c9e9f;
+  --color-3: #f3e6c6;
+  --color-4: #58676d;
+  --color-5: #3e7d91;
+  --color-6: #537999;
+  --color-1-rgba: rgba(108, 177, 131, 0.8);
+  --color-2-rgba: rgba(92, 158, 159, 0.8);
+  --color-3-rgba: rgba(243, 230, 198, 0.8);
+  --color-4-rgba: rgba(88, 103, 109, 0.8);
+  --color-5-rgba: rgba(62, 125, 145, 0.8);
+  --color-6-rgba: rgba(83, 121, 153, 0.8);
+  --gradient-1: linear-gradient(-45deg, var(--color-1-rgba), var(--color-2-rgba), var(--color-5-rgba), var(--color-3-rgba));
+
+  /*--green: #6cb183;
+  --turquoise: #5c9e9f;
+  --yellow: #f3e6c6;
+  --gray-blue: #58676d;
+  --dark-turquoise: #3e7d91;
+  --blue: #537999;*/
 }
 
 body {
@@ -13,7 +39,7 @@ body {
 }
 
 .background-black {
-  background-color: var(--black-color);
+  background-color: var(--black);
   background-size: cover;
 }
 
@@ -21,4 +47,24 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.margin-0 {
+  margin: 0;
+}
+
+.pb-3 {
+  padding-bottom: 3rem;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

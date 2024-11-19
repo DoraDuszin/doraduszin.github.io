@@ -1,3 +1,7 @@
+.w-100 {
+  width: 100%;
+}
+
 #about h3 {
   color: var(--black);
 }
@@ -9,18 +13,127 @@
   flex-direction: column;
 }
 
+.flex-end i {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  font-size: 15rem;
+  animation: iconFade 20s linear infinite;
+  opacity: 0;
+}
+
+#java {
+  animation-delay: 0s;
+}
+
+#csharp {
+  animation-delay: 2s;
+}
+
+#kotlin {
+  animation-delay: 4s;
+}
+
+#angular {
+  animation-delay: 6s;
+}
+
+#react {
+  animation-delay: 8s;
+}
+
+#typescript {
+  animation-delay: 10s;
+}
+
+#spring {
+  animation-delay: 12s;
+}
+
+#dotnetcore {
+  animation-delay: 14s;
+}
+
+#docker {
+  animation-delay: 16s;
+}
+
+#kubernetes {
+  animation-delay: 18s;
+}
+
 .img-wrapper {
   padding-bottom: 0;
+}
+
+.word-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding-right: 5rem;
+}
+
+.gradient-text-1 {
+  background: var(--gradient-3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-2 {
+  background: var(--gradient-4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.profile-wrapper {
+  background-image: url("../../../../../assets/images/background-02.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.profile-border {
+  border-right: 0.5rem solid var(--color-2);
+  padding-right: 4rem;
+}
+
+@keyframes iconFade {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 1;
+  }
+  11% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 @media (max-width: 991px) {
 
   #about .container .flex-center {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 
   .img-wrapper {
     padding-bottom: 3rem;
+  }
+
+  .flex-end i {
+    font-size: 10rem;
+  }
+
+  .word-wrapper {
+    padding-top: 15rem;
+    padding-bottom: 15rem;
   }
 
 }

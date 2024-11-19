@@ -35,10 +35,16 @@
 
 .stack-icons {
   display: flex;
-  justify-content: space-evenly;
+  /*justify-content: space-evenly;*/ /* set back when icons done */
+  justify-content: center;
   align-items: center;
   background-color: var(--white);
-  padding-bottom: 3rem;
+  /*padding-bottom: 3rem;
+  padding-top: 3rem;*/ /* remove top when icons done*/
+}
+
+.backend > i {
+  padding: 2rem;
 }
 
 
@@ -50,9 +56,14 @@
 }
 
 .stack-icons .backend i {
-  background: linear-gradient(-45deg, var(--color-1), var(--color-6));
+  /*background: linear-gradient(-45deg, var(--color-1), var(--color-6));
   -webkit-background-clip: text;
-  color: transparent;
+  color: transparent;*/
+  color: #108a00;
+}
+
+.flex {
+  display: flex;
 }
 
 .stack-icons .devops i {

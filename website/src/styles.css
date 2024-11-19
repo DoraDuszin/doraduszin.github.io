@@ -12,7 +12,7 @@
   --light-gold-color: #f6f0e7;
 
   /* gaia */
-  --color-1: #6cb183;
+/*  --color-1: #6cb183;
   --color-2: #5c9e9f;
   --color-3: #f3e6c6;
   --color-4: #58676d;
@@ -24,7 +24,29 @@
   --color-4-rgba: rgba(88, 103, 109, 0.8);
   --color-5-rgba: rgba(62, 125, 145, 0.8);
   --color-6-rgba: rgba(83, 121, 153, 0.8);
+  --gradient-1: linear-gradient(-45deg, var(--color-1-rgba), var(--color-2-rgba), var(--color-5-rgba), var(--color-3-rgba));*/
+
+  /* ethereal */
+  --color-1: #f38161;
+  --color-2: #dae2eb;
+  --color-3: #fdfdb6;
+  --color-4: #ddccd0;
+  --color-5: #eae2e9;
+  --color-6: #c8a6b6;
+  --color-1-rgba: rgba(243, 129, 97, 1);
+  --color-2-rgba: rgba(218, 226, 235, 1);
+  --color-3-rgba: rgba(253, 253, 182, 1);
+  --color-4-rgba: rgba(221, 204, 208, 1);
+  --color-5-rgba: rgba(234, 226, 233, 1);
+  --color-6-rgba: rgba(200, 166, 182, 1);
   --gradient-1: linear-gradient(-45deg, var(--color-1-rgba), var(--color-2-rgba), var(--color-5-rgba), var(--color-3-rgba));
+  --gradient-2: linear-gradient(-45deg, var(--color-1), var(--color-6));
+  --gradient-3: linear-gradient(45deg, var(--color-6), var(--color-2));
+  --gradient-4: linear-gradient(45deg, var(--color-3), var(--color-1));
+  --gradient-5: linear-gradient(45deg, var(--color-2-rgba), var(--color-3-rgba));
+  --gradient-6: linear-gradient(45deg, var(--color-4-rgba), var(--color-3-rgba));
+  --gradient-7: linear-gradient(45deg, var(--color-5-rgba), var(--color-3-rgba));
+
 
   /*--green: #6cb183;
   --turquoise: #5c9e9f;
@@ -46,9 +68,17 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 0 0;
 }
 
+h3 {
+  text-align: left;
+}
+
 p {
   margin: 1rem 0 1rem 0;
 }
+
+/*.w-100 {
+  width: 100%;
+}*/
 
 .row {
   padding: 6rem 0 6rem 0;
@@ -69,6 +99,16 @@ p {
   align-items: center;
 }
 
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.relative {
+  position: relative;
+}
+
 .margin-0 {
   margin: 0;
 }
@@ -77,12 +117,39 @@ p {
   padding-top: 0;
 }
 
+.pb-0 {
+  padding-bottom: 0 !important;
+}
+
 .pt-4 {
   padding-top: 4rem;
 }
 
 .pb-3 {
   padding-bottom: 3rem;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.btn-main {
+  border-radius: 4rem !important;
+  padding: 2rem;
+  background: var(--gradient-2);
+  border: none;
+  color: var(--white);
+  font-size: 14px !important;
+}
+
+.btn-main:hover {
+  color: var(--white);
+}
+
+.gradient-wrapper {
+  background: var(--gradient-1);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
 }
 
 /*.w-100 {
@@ -112,7 +179,11 @@ p {
   }
 
   .row:not(:first-child) {
-    padding: 0 0 4rem 0;
+    padding: 0 0 4rem 0 !important;
+  }
+
+  h3 {
+    text-align: center;
   }
 
 }

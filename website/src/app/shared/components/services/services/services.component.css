@@ -22,11 +22,13 @@
 }
 
 .service-wrapper {
-  background-color: var(--white);
+  /*background-color: var(--white);*/
   /*border-radius: 2rem;*/
   box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
   text-align: center;
   padding: 0 1rem;
+  /*border: 0.3rem solid red;
+  border-radius: 2rem;*/
 }
 
 .service-wrapper h4 {
@@ -56,4 +58,24 @@
   background: linear-gradient(-45deg, var(--color-1), var(--color-2));
   -webkit-background-clip: text;
   color: transparent;
+}
+
+.card-1 {
+  background: var(--color-2);
+}
+
+.card-2 {
+  background: var(--color-3);
+}
+
+.card-3 {
+  background: var(--color-5);
+}
+
+@media (max-width: 991px) {
+
+  #serviceRow {
+    padding-top: 0 !important;
+  }
+
 }

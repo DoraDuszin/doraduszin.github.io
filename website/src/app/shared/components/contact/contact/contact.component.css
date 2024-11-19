@@ -1,0 +1,29 @@
+#contact {
+  background: transparent;
+}
+
+#contact h3 {
+  color: var(--black);
+}
+
+form {
+  text-align: center;
+}
+
+.upwork-image {
+  width: 8rem;
+}
+
+a .fa {
+  opacity: 1 !important;
+  font-size: 8rem;
+}
+
+.icon-margin {
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+.fa-linkedin {
+  color: #0a66c2;
+}

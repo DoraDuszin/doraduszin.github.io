@@ -5,6 +5,8 @@ import {ServicesComponent} from "../../shared/components/services/services/servi
 import {AboutComponent} from "../../shared/components/about/about/about.component";
 import {ReasonsComponent} from "../../shared/components/reasons/reasons/reasons.component";
 import {StackComponent} from "../../shared/components/stack/stack/stack.component";
+import {ContactComponent} from "../../shared/components/contact/contact/contact.component";
+import {FooterComponent} from "../../layout/footer/footer/footer.component";
 
 @Component({
   selector: 'app-home',
@@ -15,7 +17,9 @@ import {StackComponent} from "../../shared/components/stack/stack/stack.componen
     AboutComponent,
     ServicesComponent,
     ReasonsComponent,
-    StackComponent
+    StackComponent,
+    ContactComponent,
+    FooterComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'

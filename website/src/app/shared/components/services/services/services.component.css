@@ -24,7 +24,7 @@
 .service-wrapper {
   /*background-color: var(--white);*/
   /*border-radius: 2rem;*/
-  box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.1);
   text-align: center;
   padding: 0 1rem;
   /*border: 0.3rem solid red;

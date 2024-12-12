@@ -7,6 +7,8 @@ import {ReasonsComponent} from "../../shared/components/reasons/reasons/reasons.
 import {StackComponent} from "../../shared/components/stack/stack/stack.component";
 import {ContactComponent} from "../../shared/components/contact/contact/contact.component";
 import {FooterComponent} from "../../layout/footer/footer/footer.component";
+import {SummaryComponent} from "../../shared/components/summary/summary.component";
+import {ComingSoonComponent} from "../coming-soon/coming-soon/coming-soon.component";
 
 @Component({
   selector: 'app-home',
@@ -19,7 +21,9 @@ import {FooterComponent} from "../../layout/footer/footer/footer.component";
     ReasonsComponent,
     StackComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    SummaryComponent,
+    ComingSoonComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'

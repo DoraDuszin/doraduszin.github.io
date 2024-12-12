@@ -1,0 +1,179 @@
+.logo {
+  width: 15rem; /* Adjust size of the logo */
+  height: auto; /* Maintain aspect ratio */
+  cursor: pointer; /* Optional: Makes it clickable for better UX */
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: center;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  /*justify-content: center;*/
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  flex-flow: wrap;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-evenly; /* Ensure even distribution of columns */
+  align-items: center;
+  width: 100%; /* Ensure the row spans the full width */
+  gap: 0; /* Remove unnecessary gaps since space-evenly manages spacing */
+}
+
+.line {
+  width: 10rem;
+  height: 0.3rem;
+  background-color: black;
+  margin: auto;
+}
+
+.service-wrapper {
+  width: 50%;
+}
+
+.h1, h1 {
+  font-size: 5rem;
+  color: var(--black);
+}
+
+.h4, h4 {
+  font-size: 3rem;
+  color: var(--black);
+}
+
+.label {
+  font-size: 2rem;
+  color: var(--black);
+}
+
+.service {
+  flex: 1; /* Each service takes an equal share of the space */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.gradient-icon-2 {
+  background: var(--gradient-2);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.gradient-icon-3 {
+  background: var(--gradient-3);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.gradient-icon-4 {
+  background: var(--gradient-4);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.word-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.gradient-text-1 {
+  background: var(--gradient-3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-2 {
+  background: var(--gradient-4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}.gradient-text-1 {
+   background: var(--gradient-3);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+ }
+
+.gradient-text-2 {
+  background: var(--gradient-4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fade-in-down {
+  animation: fadeInDown 1s ease-out;
+}
+
+.fade-in-up {
+  animation: fadeInUp 1s ease-out;
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+/* Responsive adjustments */
+/*@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  .subtitle {
+    font-size: 1.2rem;
+  }
+  .label {
+    font-size: 0.9rem;
+  }
+}*/

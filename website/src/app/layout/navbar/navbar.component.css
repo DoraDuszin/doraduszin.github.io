@@ -41,7 +41,7 @@
 }
 
 .navbar-scrolled .navbar-nav > li > a:hover {
-  background-image: linear-gradient(to right, var(--color-5), var(--color-1));
+  background-image: linear-gradient(to right, var(--color-6), var(--color-1));
   -webkit-background-clip: text;
   color: transparent !important;
 }

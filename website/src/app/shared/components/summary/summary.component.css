@@ -133,6 +133,19 @@
   animation: fadeIn 1s ease-in-out;
 }
 
+.service-carousel .service {
+  display: none; /* All services are hidden by default */
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Show the active service */
+.service-carousel .service.active {
+  display: flex; /* Only the active service is visible */
+}
+
 @keyframes fadeInDown {
   from {
     opacity: 0;
@@ -163,6 +176,67 @@
     opacity: 1;
   }
 }
+
+
+
+@media (max-width: 991px) {
+  /* Hide services and word-wrapper */
+  /*.service-wrapper {
+    display: none;
+  }*/
+
+  .word-wrapper {
+    display: none;
+  }
+
+  /* Adjust layout for smaller screens */
+  .logo-container {
+    position: absolute; /* Position the logo at the top left */
+    top: 10px; /* Add spacing from the top */
+    left: 10px; /* Add spacing from the left */
+    width: auto; /* Ensure logo is not constrained by container width */
+    text-align: left;
+  }
+
+  .logo {
+    width: 8rem; /* Smaller logo size for mobile */
+    height: auto;
+  }
+
+  .header-content {
+    text-align: center;
+    margin-top: 60px; /* Add spacing below the logo */
+  }
+
+  h1 {
+    font-size: 3rem; /* Adjust font size for mobile */
+  }
+
+  h4 {
+    font-size: 1.8rem; /* Adjust font size for mobile */
+  }
+
+  .line {
+    width: 8rem; /* Adjust line width for mobile */
+    height: 0.2rem; /* Thinner line */
+    margin: 10px auto; /* Center the line */
+  }
+
+  .service-carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Use the full height */
+  }
+
+  .pt-10 {
+    padding-top: 1rem;
+  }
+
+}
+
+
 
 
 /* Responsive adjustments */
